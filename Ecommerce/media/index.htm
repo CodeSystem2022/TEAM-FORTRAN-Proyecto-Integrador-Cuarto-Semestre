@@ -7,25 +7,40 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-<link rel="=stylesheet" href="Ecommerce/styles.css">
+<link rel="stylesheet" href="styles.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <title>Dietetica-Team-Fortran</title>
 </head>
 <body>
-    <header>
-        <div class="contenedor">
-            <nav class="menu">
-                <a href="#" id="btn-acerca-de">Acerca de</a>
-                <a href="#" id="btn-menu">Menu</a>
-                <a href="#" id="btn-galeria">Galeria</a>
-                <a href="#" id="btn-productos">Productos</a>
-            </nav>
+    <header class="header">
 
-            <div class="textos">
-                <h1 class="nombre">Dietetica <span>TeamFortran</span></h1>
-                <h3></h3>
-            </div>
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
+        </label>
+
+        <nav class="navbar">
+            <a href="#" id="btn-acerca-de">Acerca de</a>
+            <a href="#" id="btn-menu">Menu</a>
+            <a href="#" id="btn-galeria">Galeria</a>
+            <a href="#" id="btn-productos">Productos</a>
+            <a href="#" id="categorias">Categorias</a>
+            <ul class="menu-vertical">
+                <li><a href="#">Categoria1</a></li>
+                <li><a href="#">Categoria2</a></li>
+                <li><a href="#">Categoria3</a></li>
+            </ul>
+        </nav>
+
+        <div class="textos">
+            <h1 class="nombre">Dietetica <span>TeamFortran</span></h1>
+            <h3></h3>
         </div>
     </header>
+
+
 
     <section class="main">
         <section class="acerca-de" id="acerca-de">
