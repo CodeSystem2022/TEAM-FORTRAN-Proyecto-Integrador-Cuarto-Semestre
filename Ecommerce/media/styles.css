@@ -1,26 +1,85 @@
 
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing:border-box;
 }
 
+body {
+  font-family: "Open Sans", Arial, Sans-serif;
+  font-size: 16px;
+}
 
-/* NavBar */
-.header{
-  position: fixed;
-  top: left;
+.contenedor { 
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* --------------HEADER ---------------- */
+header {
   width: 100%;
-  padding: 1.3rem 10%;
-  /*background: rgba(0, 0, 0, .1);
-  backdrop-filter: blur(50px);*/
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 100%;
+  background: url('acercade.jpg') #281a0c ;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center 0;
 }
 
-.header::before{
+header .contenedor{
+  position: relative;
+  height: 700px;
+}
+
+
+header .navbar{
+  width: 100%;
+  text-align: right; 
+}
+
+header .navbar a {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  display: inline-block;
+  margin:  40px 20px;
+  text-decoration: none;
+  position: relative;
+}
+
+header .navbar a:hover {
+  text-decoration: underline;
+}
+
+header .textos {
+  width: 100%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  margin-top: -52px;
+}
+
+header .textos .nombre {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+header .textos .nombre span {
+  font-weight: 300;
+}
+
+header .textos h3 {
+  font-weight: 300;
+  font-size: 25px;
+  font-style: italic;
+}
+
+/* -------------- MAIN ---------------- */
+
+
+/*.header::before{
   content: '';
   position: absolute;
   top: 0;
@@ -32,15 +91,19 @@
   z-index: -1;
 
 }
+*/
 
+
+/*
 .navbar a{
   font-size: 1.5rem;
   color: #fff ;
   text-decoration: none;
   font-weight: 500;
   margin-left: 2.5rem;
-}
+}*/
 
+/*
 #check{
   display: none;
 }
@@ -54,7 +117,7 @@
   display: none ;
 }
 
-/* Breack Points*/
+
 @media (max-width: 992px){
   .header {
     padding: 1.3rem 5%;
@@ -122,4 +185,7 @@
   #categorias:hover + .menu-vertical {
     display: block;
   }
+  */
+
+
   
