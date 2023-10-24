@@ -56,9 +56,7 @@ header .navbar a:hover {
 header .textos {
   width: 100%;
   color: #fff;
-  position: absolute;
   top: 50%;
-  margin-top: -52px;
 }
 
 header .textos .nombre {
@@ -92,7 +90,7 @@ header .textos h3 {
   width: 50%;
   position: absolute;
   left: 0;
-  top: -50px;
+  top: 10px;
   z-index: 0;
   box-shadow: 0px 0px 15px rgba(0,0,0,.35);
 }
@@ -133,7 +131,7 @@ header .textos h3 {
   font-size: 40px;
   font-weight: 300;
   text-align: center;
-  margin-bottom: 40px;
+  margin-top: 50px;  
 }
 
 .main .menu .contenedor-menu,
@@ -183,26 +181,27 @@ header .textos h3 {
 }
 
 .main .galeria {
-  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px; 
 }
 
 .main .galeria .foto {
-  width: 25%;
-  float: left;
+  box-sizing: border-box;
+  padding: 5px;
 }
 
 .main .galeria .foto img {
   width: 100%;
   vertical-align: top;
-  opacity: .7;
-
+  opacity: 0.7;
 }
 
-.main .galeria .foto img:hover{
+.main .galeria .foto img:hover {
   opacity: 1;
-  -webkit-transition: all .3s ease;
-  -o-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .main .ubicacion {
