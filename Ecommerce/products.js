@@ -70,5 +70,123 @@ export const products = [
         description: "producto sin tacc",
         category : 'tacc',
         stock : 10
-    }
+    },
+    {
+        id: 9,
+        name: "Chips",
+        price: 600,
+        image: "/img/BudinKeto.jpeg",
+        description: "productos Keto",
+        category : 'Keto',
+        stock : 10
+    },
+    {
+        id: 10,
+        name: "Chips",
+        price: 600,
+        image: "/img/GalletasKeto.jpeg",
+        description: "productos Keto",
+        category : 'Keto',
+        stock : 10
+    },
+    {
+        id: 11,
+        name: "Chips",
+        price: 600,
+        image: "/img/BarraEnergeticaKeto.jpeg",
+        description: "productos Keto",
+        category : 'keto',
+        stock : 10
+    },
+    {
+        id: 12,
+        name: "Chips",
+        price: 600,
+        image: "/img/BrounisKeto.jpeg",
+        description: "productos Keto",
+        category : 'Keto',
+        stock : 10
+    },
+    {
+        id: 13,
+        name: "Chips",
+        price: 600,
+        image: "/img/GalletasKeto.jpeg",
+        description: "productos Keto",
+        category : 'Keto',
+        stock : 10
+    },
+    {
+        id: 14,
+        name: "Chips",
+        price: 600,
+        image: "/img/GalletasKeto.jpeg",
+        description: "productos Keto",
+        category : 'Keto',
+        stock : 10
+    },
+    {
+        id: 15,
+        name: "Chips",
+        price: 600,
+        image: "/img/DulceKeto.jpeg",
+        description: "productos Keto",
+        category : 'Keto',
+        stock : 10
+    },
+    {
+        id: 16,
+        name: "Chips",
+        price: 600,
+        image: "/img/BarraEnergeticaKeto.jpeg",
+        description: "productos Keto",
+        category : 'Keto',
+        stock : 10
+    },
+    {
+        id: 17,
+        name: "Chips",
+        price: 600,
+        image: "/img/TostadasKeto.jpeg",
+        description: "productos Keto",
+        category : 'Keto',
+        stock : 10
+    },
+    {
+        id: 18,
+        name: "Chips",
+        price: 600,
+        image: "/img/CafeKeto.jpeg",
+        description: "productos Keto",
+        category : 'Keto',
+        stock : 10
+    },
+    {
+        id: 19,
+        name: "Chips",
+        price: 600,
+        image: "/img/aceite.jpg",
+        description: "productos Keto",
+        category : 'tKeto',
+        stock : 10
+    },
+    {
+        id: 20,
+        name: "Chips",
+        price: 600,
+        image: "/img/AzucarKeto.jpg",
+        description: "productos Keto",
+        category : 'Keto',
+        stock : 10
+    },
+    {
+        id: 21,
+        name: "Chips",
+        price: 600,
+        image: "/img/bebidas.jpg",
+        description: "productos Keto",
+        category : 'Keto',
+        stock : 10
+    },
+  
 ]
