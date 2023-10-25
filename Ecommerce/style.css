@@ -1,0 +1,160 @@
+:root{
+    --primary-fuente: Arial;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--primary-fuente);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.foto {
+    margin: 0 auto;
+    max-width: 100%;
+    display: block;
+    border-radius: 100%;
+}
+
+/* nav */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #a7a8a7;
+    z-index: 1; 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 18px;
+    color: #fff; 
+}
+
+
+/* main */
+main {
+    padding: 20px;
+    margin-top: 70px; 
+}
+
+/* footer */
+footer {
+    background-color: #a7a8a7;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.fila-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.producto {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 300px;
+    text-align: center;
+    flex-basis: calc(25% - 40px);
+    display: flex;
+    flex-direction: column;
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+}
+
+.producto h2 {
+    font-size: 20px;
+    color: #333;
+}
+
+.producto p {
+    font-size: 14px;
+    color: #666;
+    margin: 10px 0;
+}
+
+.producto .precio {
+    font-size: 18px;
+    color: #9b5f0b;
+    font-weight: bold;
+}
+
+.producto button {
+    background-color: #8c5509;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    width: 60%;
+    margin: 10px auto;
+}
+
+.producto button:hover {
+    background-color: #9d7415;
+}
+
+.mapa {
+    width: 100%;
+    overflow: hidden;
+  }
+.mapa iframe {
+    width: 100%;
+    max-height: 600px;
+}
+
+.titulo-ubicacion{
+    text-align: center;
+}
+
+.contenedor-ubicacion{
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.direccion-ubicacion{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 1rem;
+}
+
+.horarios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
