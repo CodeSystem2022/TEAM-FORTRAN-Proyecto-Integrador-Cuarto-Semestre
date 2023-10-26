@@ -31,27 +31,27 @@ header {
 }
 
 /* nav */
+
 nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
     background-color: #a7a8a7;
-    z-index: 1; 
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    
 }
 
 nav ul li {
     display: inline;
     margin-right: 20px;
     font-size: 18px;
-    color: #fff; 
+    color: #fff;
 }
 
+.cart-icon {
+    margin-left: auto;
+}
 
 /* main */
 main {
