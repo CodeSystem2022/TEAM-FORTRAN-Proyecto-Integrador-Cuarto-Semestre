@@ -1,10 +1,11 @@
+const direccion = "./assets/img/";
 export const products = [
 
     {
         id: 1,
         name: "Galletitas rellenas",
         price: 600,
-        image: "/img/galletas.jpg",
+        image: `${direccion}galletas.jpg`,
         description: "producto sin tacc",
         category : 'tacc',
         stock : 10
@@ -13,7 +14,7 @@ export const products = [
         id: 2,
         name: "Alfajor",
         price: 600,
-        image: "/img/alfajor.jpeg",
+        image: `${direccion}alfajor.jpeg`,
         description: "producto vegano",
         category : 'vegano',
         stock : 10
@@ -22,7 +23,7 @@ export const products = [
         id: 3,
         name: "Masitas",
         price: 600,
-        image: "/img/masitas.jpg",
+        image: `${direccion}masitas.jpg`,
         description: "producto vegetariano",
         category : 'vegetariano',
         stock : 10
@@ -31,7 +32,7 @@ export const products = [
         id: 4,
         name: "Pan",
         price: 600,
-        image: "/img/pan.webp",
+        image: `${direccion}pan.webp`,
         description: "producto free cruelty",
         category : 'free-cruelty',
         stock : 10
@@ -40,7 +41,7 @@ export const products = [
         id: 5,
         name: "Polenta",
         price: 600,
-        image: "/img/polenta.jpeg",
+        image: `${direccion}polenta.jpeg`,
         description: "producto sin tacc",
         category : 'tacc',
         stock : 10
@@ -49,7 +50,7 @@ export const products = [
         id: 6,
         name: "Queso",
         price: 600,
-        image: "/img/queso.webp",
+        image: `${direccion}queso.webp`,
         description: "producto sin tacc",
         category : 'tacc',
         stock : 10
@@ -58,7 +59,7 @@ export const products = [
         id: 7,
         name: "Granola",
         price: 600,
-        image: "/img/granola.webp",
+        image: `${direccion}granola.webp`,
         description: "producto sin tacc",
         category : 'tacc',
         stock : 10
@@ -67,7 +68,7 @@ export const products = [
         id: 8,
         name: "Chips",
         price: 600,
-        image: "/img/chips.png",
+        image: `${direccion}chips.png`,
         description: "producto sin tacc",
         category : 'tacc',
         stock : 10
@@ -76,7 +77,7 @@ export const products = [
         id: 9,
         name: "Budin Keto",
         price: 600,
-        image: "/img/BudinKeto.jpeg",
+        image: `${direccion}BudinKeto.jpeg`,
         description: "productos Keto",
         category : 'Keto',
         stock : 10
@@ -85,7 +86,7 @@ export const products = [
         id: 10,
         name: "Galletas Keto",
         price: 600,
-        image: "/img/GalletasKeto.jpeg",
+        image: `${direccion}GalletasKeto.jpeg`,
         description: "productos Keto",
         category : 'Keto',
         stock : 10
@@ -94,7 +95,7 @@ export const products = [
         id: 11,
         name: "Barra Energetica Keto",
         price: 600,
-        image: "/img/BarraEnergeticaKeto.jpeg",
+        image: `${direccion}BarraEnergeticaKeto.jpeg`,
         description: "productos Keto",
         category : 'keto',
         stock : 10
@@ -103,7 +104,7 @@ export const products = [
         id: 12,
         name: "Brounis Keto",
         price: 600,
-        image: "/img/BrounisKeto.jpeg",
+        image: `${direccion}BrounisKeto.jpeg`,
         description: "productos Keto",
         category : 'Keto',
         stock : 10
@@ -112,7 +113,7 @@ export const products = [
         id: 13,
         name: "Chips",
         price: 600,
-        image: "/img/GalletasKeto.jpeg",
+        image: `${direccion}GalletasKeto.jpeg`,
         description: "productos Keto",
         category : 'Keto',
         stock : 10
@@ -121,7 +122,7 @@ export const products = [
         id: 14,
         name: "Galletas Keto",
         price: 600,
-        image: "/img/GalletasKeto.jpeg",
+        image: `${direccion}GalletasKeto.jpeg`,
         description: "productos Keto",
         category : 'Keto',
         stock : 10
@@ -130,7 +131,7 @@ export const products = [
         id: 15,
         name: "Dulce Keto",
         price: 600,
-        image: "/img/DulceKeto.jpeg",
+        image: `${direccion}DulceKeto.jpeg`,
         description: "productos Keto",
         category : 'Keto',
         stock : 10
@@ -139,7 +140,7 @@ export const products = [
         id: 16,
         name: "Chips",
         price: 600,
-        image: "/img/BarraEnergeticaKeto.jpeg",
+        image: `${direccion}BarraEnergeticaKeto.jpeg`,
         description: "productos Keto",
         category : 'Keto',
         stock : 10
@@ -148,7 +149,7 @@ export const products = [
         id: 17,
         name: "Tostadas Keto",
         price: 600,
-        image: "/img/TostadasKeto.jpeg",
+        image: `${direccion}TostadasKeto.jpeg`,
         description: "productos Keto",
         category : 'Keto',
         stock : 10
@@ -157,7 +158,7 @@ export const products = [
         id: 18,
         name: "Cafe Keto",
         price: 600,
-        image: "/img/CafeKeto.jpeg",
+        image: `${direccion}CafeKeto.jpeg`,
         description: "productos Keto",
         category : 'Keto',
         stock : 10
@@ -166,16 +167,16 @@ export const products = [
         id: 19,
         name: "Aceite",
         price: 600,
-        image: "/img/aceite.jpg",
+        image: `${direccion}aceites.jpg`,
         description: "productos Keto",
-        category : 'tKeto',
+        category : 'Keto',
         stock : 10
     },
     {
         id: 20,
         name: "Azucar Keto",
         price: 600,
-        image: "/img/AzucarKeto.jpg",
+        image: `${direccion}AzucarKeto.jpeg`,
         description: "productos Keto",
         category : 'Keto',
         stock : 10
@@ -184,7 +185,7 @@ export const products = [
         id: 21,
         name: "Bebidas",
         price: 600,
-        image: "/img/bebidas.jpg",
+        image: `${direccion}bebidas.jpg`,
         description: "productos Keto",
         category : 'Keto',
         stock : 10
