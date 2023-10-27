@@ -1,4 +1,5 @@
 export const products = [
+
     {
         id: 1,
         name: "Galletitas rellenas",
@@ -73,7 +74,7 @@ export const products = [
     },
     {
         id: 9,
-        name: "Chips",
+        name: "Budin Keto",
         price: 600,
         image: "/img/BudinKeto.jpeg",
         description: "productos Keto",
@@ -82,7 +83,7 @@ export const products = [
     },
     {
         id: 10,
-        name: "Chips",
+        name: "Galletas Keto",
         price: 600,
         image: "/img/GalletasKeto.jpeg",
         description: "productos Keto",
@@ -91,7 +92,7 @@ export const products = [
     },
     {
         id: 11,
-        name: "Chips",
+        name: "Barra Energetica Keto",
         price: 600,
         image: "/img/BarraEnergeticaKeto.jpeg",
         description: "productos Keto",
@@ -100,7 +101,7 @@ export const products = [
     },
     {
         id: 12,
-        name: "Chips",
+        name: "Brounis Keto",
         price: 600,
         image: "/img/BrounisKeto.jpeg",
         description: "productos Keto",
@@ -118,7 +119,7 @@ export const products = [
     },
     {
         id: 14,
-        name: "Chips",
+        name: "Galletas Keto",
         price: 600,
         image: "/img/GalletasKeto.jpeg",
         description: "productos Keto",
@@ -127,7 +128,7 @@ export const products = [
     },
     {
         id: 15,
-        name: "Chips",
+        name: "Dulce Keto",
         price: 600,
         image: "/img/DulceKeto.jpeg",
         description: "productos Keto",
@@ -145,7 +146,7 @@ export const products = [
     },
     {
         id: 17,
-        name: "Chips",
+        name: "Tostadas Keto",
         price: 600,
         image: "/img/TostadasKeto.jpeg",
         description: "productos Keto",
@@ -154,7 +155,7 @@ export const products = [
     },
     {
         id: 18,
-        name: "Chips",
+        name: "Cafe Keto",
         price: 600,
         image: "/img/CafeKeto.jpeg",
         description: "productos Keto",
@@ -163,7 +164,7 @@ export const products = [
     },
     {
         id: 19,
-        name: "Chips",
+        name: "Aceite",
         price: 600,
         image: "/img/aceite.jpg",
         description: "productos Keto",
@@ -172,7 +173,7 @@ export const products = [
     },
     {
         id: 20,
-        name: "Chips",
+        name: "Azucar Keto",
         price: 600,
         image: "/img/AzucarKeto.jpg",
         description: "productos Keto",
@@ -181,7 +182,7 @@ export const products = [
     },
     {
         id: 21,
-        name: "Chips",
+        name: "Bebidas",
         price: 600,
         image: "/img/bebidas.jpg",
         description: "productos Keto",
