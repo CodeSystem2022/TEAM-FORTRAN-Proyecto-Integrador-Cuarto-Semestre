@@ -188,14 +188,5 @@ export const products = [
         category : 'keto',
         stock : 10
     },
-    {
-        id: 22,
-        name: "Chips",
-        price: 600,
-        image: "/img/bebidas.jpg",
-        description: "productos Keto",
-        category : 'Keto',
-        stock : 10
-    },
   
 ]
