@@ -1,0 +1,1 @@
+export const ingresar= (req, res) => res.send("Ingresando");   

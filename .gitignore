@@ -1,0 +1,57 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Dependencias y módulos generados
+package-lock.json
+yarn.lock
+
+# Ambientes de desarrollo
+.env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# Compiled binary addons (compiled from source code)
+build/Release/
+
+# Output of 'npm pack'
+*.tgz
+
+# Output of 'npm dedupe'
+.npm-dedupe
+
+# vscode settings
+.vscode/settings.json
+
+# WebStorm workspace files
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/usage.statistics.xml
+.idea/dictionaries
+
+# User-specific files
+.npmrc
+.npmignore
+npm-debug.log
+npmrc
+
+# Automatically created files
+.github
+.DS_Store
+
+# Mac OS
+.idea/
+
+# Windows
+Thumbs.db
+Desktop.ini
