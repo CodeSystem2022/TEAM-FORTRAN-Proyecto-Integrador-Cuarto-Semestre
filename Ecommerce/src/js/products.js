@@ -369,7 +369,101 @@ export const products = [
         description: "Producto Natural",
         category : 'Natural',
         stock : 14.2
-    }
+    },
+    {
+       id: 42,
+       name: "Producto Vegano-Tofu Soyland sin tacc" ,
+       price: 1430,
+       image: "/img/Producto Vegano-Tofu Soyland sin tacc 320 grs.jpg",
+       description:"Productos Veganos",
+       category : 'Veganos',
+       stock : No 
+    },
+    {
+      id: 43,
+      name: "Producto Vegano-Wakas Pastas Alubia y Quinoa 250 grs" ,
+      price: 1500,
+      image: "/img/Producto Vegano-Wakas Pastas Alubia y Quinoa 250 grs.jpg",
+      description: "Productos Veganos",
+      category : 'Veganos' ,
+      stock : 16.0
+    },
+    {
+        id: 44,
+        name: "Producto Vegano-Galletitas Natural veganas" ,
+        price: 600,
+        image: "/img/Producto Vegano-Galletitas Natural veganas.jpg",
+        description: "Productos Veganos",
+        category : 'Veganos',
+        stock: 20
+    },
+    {
+        id: 45,
+        name: "Producto Vegano-Smoothie sin tacc-200ml",
+        price: 950,
+        image: "/img/Producto Vegano-Smoothie sin tacc-200ml.jpg",
+        description: "Productos Veganos",
+        category : 'Veganos',
+        stock: 15
+
+    },
+    {
+        id: 46,
+        name: "Producto Vegano-Arroz Integral organico-500grs",
+        price: 1180,
+        image: "/img/Producto Vegano-Arroz Integral organico-500grs.jpg",
+        description: "Productos Veganos",
+        category: 'Veganos',
+        stock: 10
+    },
+    {
+        id: 47,
+        name:"Producto Vegano-Queso cheddar-Las Vacas",
+        price: 1570,
+        image:"/img/Producto Vegano-Queso cheddar-Las Vacas.jpg",
+        description: "Productos Veganos",
+        category : 'Veganos',
+        stock: 15
+
+    },
+    {
+        id: 48,
+        name:"Producto Vegano-Queso Dambo-Las Vacas",
+        price: 1570,
+        image:"/img/Producto Vegano-Queso Dambo-Las Vacas.jpg",
+        description: "Productos Veganos",
+        category : 'Veganos',
+        stock: 15
+    },
+    { 
+        id: 49,
+        name:"Producto Vegano-Yogur Vegetal",
+        price: 1220,
+        image: "/img/Producto Vegano-Yogur Vegetal.jpg",
+        description: "Productos Veganos",
+        category : 'Veganos',
+        stock: 20
+
+    },
+    {
+        id: 50,
+        name:"Producto Vegano-Not chicken burger-x2uds",
+        price: 1220,
+        image: "/img/Producto Vegano-Not chicken burger-x2uds.jpg",
+        description: "Productos Veganos",
+        category: 'Veganos',
+        stock: 18
+    },
+    {
+        id: 51,
+        name:"Producto Vegano-Erititrol-x100grs",
+        price: 3000,
+        image: "/img/Producto Vegano-Erititrol-x100grs.jpg",
+        description: "Productos Veganos",
+        category: 'Veganos',
+        stock: 16
+    },
+
 
   
 ]
