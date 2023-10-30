@@ -23,7 +23,7 @@ const loadSection = (section) => {
 const btnTacc = document.querySelector(".btn-tacc");
 const btnVeggie = document.querySelector(".btn-veggie");
 const btnKeto = document.querySelector(".btn-keto");
-const btnAlmacen = document.querySelector(".btn-natural");
+const btnNatural = document.querySelector(".btn-Natural");
 const btnCosmetica = document.querySelector(".btn-cosmetica");
 
 btnTacc.addEventListener("click", (e) => {
@@ -38,8 +38,8 @@ btnVeggie.addEventListener("click", (e) => {
     loadSection('vegano');
 });
 
-btnAlmacen.addEventListener("click", (e) => {
-    loadSection('almacen');
+btnNatural.addEventListener("click", (e) => {
+    loadSection('Natural');
 });
 
 btnCosmetica.addEventListener("click", (e) => {
