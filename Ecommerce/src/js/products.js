@@ -374,8 +374,8 @@ export const products = [
        id: 42,
        name: "Producto Vegano-Tofu Soyland sin tacc" ,
        price: 1430,
-       image: '${direccion}Producto Vegano-Tofu Soyland sin tacc 320 grs.jpg',
-       description:"Productos Veganos",
+       image: './assets/img/Producto Vegano-Tofu Soyland sin tacc 320 grs.jpg',
+       description: "producto vegano",
        category : 'vegano',
        stock : 0
     },
@@ -383,17 +383,17 @@ export const products = [
       id: 43,
       name: "Producto Vegano-Wakas Pastas Alubia y Quinoa 250 grs" ,
       price: 1500,
-      image: '${direccion}Producto Vegano-Wakas Pastas Alubia y Quinoa 250 grs',
-      description: "Productos Veganos",
+      image: './assets/img/Producto Vegano-Wakas Pastas Alubia y Quinoa 250 grs.jpg',
+      description: "producto vegano",
       category : 'vegano' ,
-      stock : 16.0
+      stock : 16
     },
     {
         id: 44,
         name: "Producto Vegano-Galletitas Natural veganas" ,
         price: 600,
-        image: "/img/Producto Vegano-Galletitas Natural veganas.jpg",
-        description: "Productos Veganos",
+        image: './assets/img/Producto Vegano-Galletitas Natural veganas.jpg',
+        description: "producto vegano",
         category : 'vegano',
         stock: 20
     },
@@ -401,8 +401,8 @@ export const products = [
         id: 45,
         name: "Producto Vegano-Smoothie sin tacc-200ml",
         price: 950,
-        image: "/img/Producto Vegano-Smoothie sin tacc-200ml.jpg",
-        description: "Productos Veganos",
+        image: './assets/img/Producto Vegano-Smoothie sin tacc-200ml.jpg',
+        description: "producto vegano",
         category : 'vegano',
         stock: 15
 
@@ -411,8 +411,8 @@ export const products = [
         id: 46,
         name: "Producto Vegano-Arroz Integral organico-500grs",
         price: 1180,
-        image: "/img/Producto Vegano-Arroz Integral organico-500grs.jpg",
-        description: "Productos Veganos",
+        image: './assets/img/Producto Vegano-Arroz Integral organico-500grs.jpg',
+        description: "producto vegano",
         category: 'vegano',
         stock: 10
     },
@@ -420,8 +420,8 @@ export const products = [
         id: 47,
         name:"Producto Vegano-Queso cheddar-Las Vacas",
         price: 1570,
-        image:"/img/Producto Vegano-Queso cheddar-Las Vacas.jpg",
-        description: "Productos Veganos",
+        image: './assets/img/Producto Vegano-Queso cheddar-Las Vacas.jpg',
+        description: "producto vegano",
         category : 'vegano',
         stock: 15
 
@@ -430,8 +430,8 @@ export const products = [
         id: 48,
         name:"Producto Vegano-Queso Dambo-Las Vacas",
         price: 1570,
-        image:"/img/Producto Vegano-Queso Dambo-Las Vacas.jpg",
-        description: "Productos Veganos",
+        image: './assets/img/Producto Vegano-Queso Dambo-Las Vacas.jpg',
+        description: "producto vegano",
         category : 'vegano',
         stock: 15
     },
@@ -439,8 +439,8 @@ export const products = [
         id: 49,
         name:"Producto Vegano-Yogur Vegetal",
         price: 1220,
-        image: "/img/Producto Vegano-Yogur Vegetal.jpg",
-        description: "Productos Veganos",
+        image: './assets/img/Producto Vegano-Yogur Vegetal.jpg',
+        description: "producto vegano",
         category : 'vegano',
         stock: 20
 
@@ -449,8 +449,8 @@ export const products = [
         id: 50,
         name:"Producto Vegano-Not chicken burger-x2uds",
         price: 1220,
-        image: "/img/Producto Vegano-Not chicken burger-x2uds.jpg",
-        description: "Productos Veganos",
+        image: './assets/img/Producto Vegano-Not chicken burger-x2uds.jpg',
+        description: "producto vegano",
         category: 'vegano',
         stock: 18
     },
@@ -458,8 +458,8 @@ export const products = [
         id: 51,
         name:"Producto Vegano-Erititrol-x100grs",
         price: 3000,
-        image: "/img/Producto Vegano-Erititrol-x100grs.jpg",
-        description: "Productos Veganos",
+        image: './assets/img/Producto Vegano-Erititrol-x100grs.jpg',
+        description: "producto vegano",
         category: 'vegano',
         stock: 16
     },
