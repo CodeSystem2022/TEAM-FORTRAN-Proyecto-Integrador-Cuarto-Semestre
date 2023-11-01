@@ -377,7 +377,7 @@ export const products = [
        image: "/img/Producto Vegano-Tofu Soyland sin tacc 320 grs.jpg",
        description:"Productos Veganos",
        category : 'Veganos',
-       stock : No 
+       stock : 10 
     },
     {
       id: 43,
