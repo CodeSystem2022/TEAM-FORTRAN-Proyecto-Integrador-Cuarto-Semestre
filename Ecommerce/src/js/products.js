@@ -3,73 +3,73 @@ export const products = [
 
     {
         id: 1,
-        name: "Galletitas rellenas",
-        price: 600,
-        image: `${direccion}galletas.jpg`,
-        description: "producto sin tacc",
+        name: "Alfajor de Avellanas",
+        price: 580,
+        image: `${direccion}TaccAlfajorAvellanas.jpeg`,
+        description: "x 50 grs",
         category : 'tacc',
         stock : 10
     },
     {
         id: 2,
-        name: "Alfajor",
-        price: 600,
-        image: `${direccion}alfajor.jpeg`,
-        description: "producto vegano",
-        category : 'vegano',
+        name: "Alfajor de Limón",
+        price: 530,
+        image: `${direccion}TaccAlfajorLimon.jpeg`,
+        description: "x 55 grs",
+        category : 'tacc',
         stock : 10
     },
     {
         id: 3,
-        name: "Masitas",
-        price: 600,
-        image: `${direccion}masitas.jpg`,
-        description: "producto vegetariano",
-        category : 'vegetariano',
+        name: "Almohaditas Rellenas",
+        price: 1320,
+        image: `${direccion}TaccAlmohaditas.jpeg`,
+        description: "x 200 grs",
+        category : 'tacc',
         stock : 10
     },
     {
         id: 4,
-        name: "Pan",
+        name: "Barra de Cereal",
         price: 600,
-        image: `${direccion}pan.webp`,
-        description: "producto free cruelty",
-        category : 'free-cruelty',
+        image: `${direccion}TaccBarrasCereal.jpeg`,
+        description: "x 45 grs",
+        category : 'tacc',
         stock : 10
     },
     {
         id: 5,
-        name: "Polenta",
-        price: 600,
-        image: `${direccion}polenta.jpeg`,
-        description: "producto sin tacc",
+        name: "Barra de Semillas",
+        price: 470,
+        image: `${direccion}TaccBarraSemillas.jpeg`,
+        description: "x 27 grs",
         category : 'tacc',
         stock : 10
     },
     {
         id: 6,
-        name: "Queso",
-        price: 600,
-        image: `${direccion}queso.webp`,
-        description: "producto sin tacc",
+        name: "Bebida de Almendras",
+        price: 1400,
+        image: `${direccion}TaccBebidaAlmendras.jpeg`,
+        description: "x 1 L",
         category : 'tacc',
         stock : 10
     },
     {
         id: 7,
-        name: "Granola",
-        price: 600,
-        image: `${direccion}granola.webp`,
-        description: "producto sin tacc",
+        name: "Budin",
+        price: 1800,
+        image: `${direccion}TaccBudinSinTacc.jpeg`,
+        description: "x 200 grs",
         category : 'tacc',
         stock : 10
     },
     {
         id: 8,
-        name: "Chips",
-        price: 600,
-        image: `${direccion}chips.png`,
-        description: "producto sin tacc",
+        name: "Cacao Amargo",
+        price: 2890,
+        image: `${direccion}TaccCacaoAmargo.jpeg`,
+        description: "x 200 grs",
         category : 'tacc',
         stock : 10
     },
@@ -371,99 +371,484 @@ export const products = [
         stock : 14.2
     },
     {
-       id: 42,
-       name: "Producto Vegano-Tofu Soyland sin tacc" ,
-       price: 1430,
-       image: "/img/Producto Vegano-Tofu Soyland sin tacc 320 grs.jpg",
-       description:"Productos Veganos",
-       category : 'Veganos',
-       stock : 10 
-    },
-    {
-      id: 43,
-      name: "Producto Vegano-Wakas Pastas Alubia y Quinoa 250 grs" ,
-      price: 1500,
-      image: "/img/Producto Vegano-Wakas Pastas Alubia y Quinoa 250 grs.jpg",
-      description: "Productos Veganos",
-      category : 'Veganos' ,
-      stock : 16.0
-    },
-    {
-        id: 44,
-        name: "Producto Vegano-Galletitas Natural veganas" ,
-        price: 600,
-        image: "/img/Producto Vegano-Galletitas Natural veganas.jpg",
-        description: "Productos Veganos",
-        category : 'Veganos',
-        stock: 20
-    },
-    {
-        id: 45,
-        name: "Producto Vegano-Smoothie sin tacc-200ml",
-        price: 950,
-        image: "/img/Producto Vegano-Smoothie sin tacc-200ml.jpg",
-        description: "Productos Veganos",
-        category : 'Veganos',
-        stock: 15
+        id: 42,
+        name: "Tofu Soyland" ,
+        price: 1430,
+        image: `${direccion}VeganoTofuSoyland.jpg`,
+        description: "x 320 grs",
+        category : 'vegano',
+        stock : 0
+     },
+     {
+       id: 43,
+       name: "Pastas Alubia y Quinoa" ,
+       price: 1500,
+       image:`${direccion}VeganoPastasAlubiaQuinoa.jpg`,
+       description: "x 250 grs",
+       category : 'vegano' ,
+       stock : 16
+     },
+     {
+         id: 44,
+         name: "Galletitas Natural Veganas" ,
+         price: 600,
+         image: `${direccion}VeganoGalletitasNatural.jpg`,
+         description: "x 180 grs",
+         category : 'vegano',
+         stock: 20
+     },
+     {
+         id: 45,
+         name: "Smoothie",
+         price: 950,
+         image: `${direccion}VeganoSmoothie.jpg`,
+         description: "x 200 ml",
+         category : 'vegano',
+         stock: 15
+ 
+     },
+     {
+         id: 46,
+         name: "Arroz Integral Organico",
+         price: 1180,
+         image: `${direccion}VeganoArrozIntegral.jpg`,
+         description: "x 500 grs",
+         category: 'vegano',
+         stock: 10
+     },
+     {
+         id: 47,
+         name:"Queso Cheddar",
+         price: 1570,
+         image: `${direccion}VeganoQuesoCheddar.jpg`,
+         description: "x 200 grs",
+         category : 'vegano',
+         stock: 15
+ 
+     },
+     {
+         id: 48,
+         name:"Queso Dambo",
+         price: 1570,
+         image: `${direccion}VeganoQuesoDambo.jpg`,
+         description: "x 200 grs",
+         category : 'vegano',
+         stock: 15
+     },
+     { 
+         id: 49,
+         name:"Yogur Vegetal",
+         price: 1220,
+         image: `${direccion}VeganoYogurVegetal.jpg`,
+         description: "x 160 grs",
+         category : 'vegano',
+         stock: 20
+ 
+     },
+     {
+         id: 50,
+         name:"Not Chicken Burger",
+         price: 1220,
+         image: `${direccion}VeganoNotChickenBurger.jpg`,
+         description: "2 uds x 100 grs c/u",
+         category: 'vegano',
+         stock: 18
+     },
+     {
+         id: 51,
+         name:"Erititrol",
+         price: 3000,
+         image: `${direccion}VeganoErititrol.jpg`,
+         description: "x 100 grs",
+         category: 'vegano',
+         stock: 16
+     },
+     {
+         id: 52,
+         name: "Cookies de Limon",
+         price: 700,
+         image: `${direccion}TaccCookiesLimon.jpeg`,
+         description: "x 150 grs",
+         category : 'tacc',
+         stock : 10
+     },
+     {
+         id: 53,
+         name: "Galletitas de Coco",
+         price: 1040,
+         image: `${direccion}TaccGalletitasCoco.jpeg`,
+         description: "x 200 grs",
+         category : 'tacc',
+         stock : 15
+     },
+     {
+         id: 54,
+         name: "Galletitas Pepitas",
+         price: 1040,
+         image: `${direccion}TaccGalletitasPepitas.jpeg`,
+         description: "x 200 grs",
+         category : 'tacc',
+         stock : 12
+     },
+     {
+         id: 55,
+         name: "Harina de Coco",
+         price: 2400,
+         image: `${direccion}TaccHarinaCoco.jpeg`,
+         description: "x 200 grs",
+         category : 'tacc',
+         stock : 20
+     },
+     {
+         id: 56,
+         name: "Jugo 100% Exprimido",
+         price: 920,
+         image: `${direccion}TaccJugoExprimido.jpeg`,
+         description: "x 1 L",
+         category : 'tacc',
+         stock : 18
+     },
+     {
+         id: 57,
+         name: "Levadura en Copos",
+         price: 4860,
+         image: `${direccion}TaccLevaduraCopos.jpeg`,
+         description: "x 200 grs",
+         category : 'tacc',
+         stock : 13
+     },
+     {
+         id: 58,
+         name: "Medallon de Soja",
+         price: 1230,
+         image: `${direccion}TaccMedallonSoja.jpeg`,
+         description: "2 uds x 115 grs c/u",
+         category : 'tacc',
+         stock : 15
+     },
+     {
+         id: 59,
+         name: "Pancakes de Quinoa",
+         price: 2000,
+         image: `${direccion}TaccPancakesQuinoa.jpg`,
+         description: "x 320 grs",
+         category : 'tacc',
+         stock : 11
+     },
+     {
+         id: 60,
+         name: "Premezcla para Pan",
+         price: 1250,
+         image: `${direccion}TaccPremezclaPan.jpeg`,
+         description: "x 500 grs",
+         category : 'tacc',
+         stock : 8
+     },
+     {
+         id: 61,
+         name: "Premezcla para Pizza",
+         price: 1250,
+         image: `${direccion}TaccPremezclaPizza.jpeg`,
+         description: "x 500 grs",
+         category : 'tacc',
+         stock : 9
+     },
+     {
+         id: 62,
+         name: "Tostadas de Arroz",
+         price: 850,
+         image: `${direccion}TaccTostadasArroz.jpeg`,
+         description: "x 150 grs",
+         category : 'tacc',
+         stock : 16
+     },
+     {
+         id: 63,
+         name: "Tostadas de Arroz Integrales",
+         price: 850,
+         image: `${direccion}TaccTostadasArrozIntegrales.jpeg`,
+         description: "x 150 grs",
+         category : 'tacc',
+         stock : 18
+     },
+     {
+         id: 64,
+         name: "Aceite Descongestivo",
+         price: 2200,
+         image: `${direccion}CosmeticaAceiteDescongestivo.jpg`,
+         description: "x 30 cc",
+         category : 'cosmetica',
+         stock : 8
+     },
+     {
+         id: 65,
+         name: "Aceite Exfoliante",
+         price: 2600,
+         image: `${direccion}CosmeticaAceiteExfoliante.jpg`,
+         description: "x 30 cc",
+         category : 'cosmetica',
+         stock : 9
+     },
+     {
+         id: 66,
+         name: "Acondicionador Sólido",
+         price: 3100,
+         image: `${direccion}CosmeticaAcondicionadorSolido.jpg`,
+         description: "x 50 grs",
+         category : 'cosmetica',
+         stock : 7
+     },
+     {
+         id: 67,
+         name: "Loción Antiséptica",
+         price: 1850,
+         image: `${direccion}CosmeticaLocionAntiseptica.jpg`,
+         description: "x 75 cc",
+         category : 'cosmetica',
+         stock : 10
+     },
+     {
+         id: 68,
+         name: "Bálsamo Antiinflamatorio",
+         price: 2300,
+         image: `${direccion}CosmeticaBalsamoAntiinflamatorio.jpg`,
+         description: "x 30 grs",
+         category : 'cosmetica',
+         stock : 9
+     },
+     {
+         id: 69,
+         name: "Bálsamo Regenerante",
+         price: 2300,
+         image: `${direccion}CosmeticaBalsamoRegenerante.jpg`,
+         description: "x 30 grs",
+         category : 'cosmetica',
+         stock : 11
+     },
+     {
+         id: 70,
+         name: "Cepillo Masajeador Grande",
+         price: 3600,
+         image: `${direccion}CosmeticaCepilloMasajeGrande.jpg`,
+         description: "100% natural y ecológico",
+         category : 'cosmetica',
+         stock : 10
+     },
+     {
+         id: 71,
+         name: "Cepillo Masajeador Chico",
+         price: 3200,
+         image: `${direccion}CosmeticaCepilloMasajeChico.jpg`,
+         description: "100% natural y ecológico",
+         category : 'cosmetica',
+         stock : 6
+     },
+     {
+         id: 72,
+         name: "Desodorante Roll On",
+         price: 2500,
+         image: `${direccion}CosmeticaDesodoranteRoll.jpg`,
+         description: "x 50 cc",
+         category : 'cosmetica',
+         stock : 8
+     },
+     {
+         id: 73,
+         name: "Emulsión Humectante",
+         price: 2900,
+         image: `${direccion}CosmeticaEmulsionHumectante.jpg`,
+         description: "x 100 cc",
+         category : 'cosmetica',
+         stock : 7
+     },
+     {
+         id: 74,
+         name: "Jabón para Bebés",
+         price: 3300,
+         image: `${direccion}CosmeticaJabonBebes.jpg`,
+         description: "x 240 cc",
+         category : 'cosmetica',
+         stock : 5
+     },
+     {
+         id: 75,
+         name: "jabón Relajante",
+         price: 3300,
+         image: `${direccion}CosmeticaJabonRelajante.jpg`,
+         description: "x 240 cc",
+         category : 'cosmetica',
+         stock : 6
+     },
+     {
+         id: 76,
+         name: "Manopla Exfoliante",
+         price: 1200,
+         image: `${direccion}CosmeticaManoplaExfoliante.jpg`,
+         description: "material reutilizado",
+         category : 'cosmetica',
+         stock : 6
+     },
+     {
+         id: 77,
+         name: "Neceser Chico",
+         price: 1100,
+         image: `${direccion}CosmeticaNeceserChico.jpg`,
+         description: "material reutilizado",
+         category : 'cosmetica',
+         stock : 4
+     },
+     {
+         id: 78,
+         name: "Neceser Grande",
+         price: 1300,
+         image: `${direccion}CosmeticaNeceserGrande.jpg`,
+         description: "material reutilizado",
+         category : 'cosmetica',
+         stock : 7
+     },
+     {
+         id: 79,
+         name: "Peine Clásico",
+         price: 2800,
+         image: `${direccion}CosmeticaPeineClasico.jpg`,
+         description: "100% natural y ecológico",
+         category : 'cosmetica',
+         stock : 8
+     },
+     {
+         id: 80,
+         name: "Peine para Rulos",
+         price: 2800,
+         image: `${direccion}CosmeticaPeineRulos.jpg`,
+         description: "100% natural y ecológico",
+         category : 'cosmetica',
+         stock : 5
+     },
+     {
+         id: 81,
+         name: "Shampoo Sólido",
+         price: 300,
+         image: `${direccion}CosmeticaShampooSolido.jpg`,
+         description: "x 50 grs",
+         category : 'cosmetica',
+         stock : 10
+     },
+     {
+         id: 82,
+         name: "Shampoo y Acondicionador Líquidos",
+         price: 5400,
+         image: `${direccion}CosmeticaShampooAcondicLiquidos.jpg`,
+         description: "x 200 cc",
+         category : 'cosmetica',
+         stock : 9
+     },
+     {
+         id: 83,
+         name: "Shampoo y Acondicionador Sólidos",
+         price: 5750,
+         image: `${direccion}CosmeticaShampooAcondicSolidos.jpg`,
+         description: "x 50 grs c/u",
+         category : 'cosmetica',
+         stock : 12
 
+     },{id: 84,
+     name:"Entre Nuts Pasta de mani ",
+     price: 1400,
+     image: `${direccion}Pastademani.jpeg`,
+     description: "x 400 grs",
+     category: 'vegano',
+     stock: 16
     },
-    {
-        id: 46,
-        name: "Producto Vegano-Arroz Integral organico-500grs",
+       {
+        id: 85,
+        name:"Aceite de coco en aerosol Chia ",
+        price: 4140,
+        image: `${direccion}AceiteCoco.jpeg`,
+        description: "x 150 grs",
+        category: 'vegano',
+        stock: 9
+       },
+       {
+        id: 86,
+        name:"Not dulce de leche",
         price: 1180,
-        image: "/img/Producto Vegano-Arroz Integral organico-500grs.jpg",
-        description: "Productos Veganos",
-        category: 'Veganos',
+        image: `${direccion}Dulcedeleche.jpeg`,
+        description: "x 250 grs",
+        category: 'vegano',
         stock: 10
-    },
-    {
-        id: 47,
-        name:"Producto Vegano-Queso cheddar-Las Vacas",
-        price: 1570,
-        image:"/img/Producto Vegano-Queso cheddar-Las Vacas.jpg",
-        description: "Productos Veganos",
-        category : 'Veganos',
-        stock: 15
-
-    },
-    {
-        id: 48,
-        name:"Producto Vegano-Queso Dambo-Las Vacas",
-        price: 1570,
-        image:"/img/Producto Vegano-Queso Dambo-Las Vacas.jpg",
-        description: "Productos Veganos",
-        category : 'Veganos',
-        stock: 15
-    },
-    { 
-        id: 49,
-        name:"Producto Vegano-Yogur Vegetal",
-        price: 1220,
-        image: "/img/Producto Vegano-Yogur Vegetal.jpg",
-        description: "Productos Veganos",
-        category : 'Veganos',
+       },
+       {
+        id: 87,
+        name:"Pepas de membrillo",
+        price: 940,
+        image: `${direccion}Pepas.jpeg`,
+        description: "x 300 grs",
+        category: 'vegano',
+        stock: 10
+       },
+       {
+        id: 88,
+        name:"Semillas de psyllium",
+        price: 920,
+        image: `${direccion}Semillas.jpeg`,
+        description: "x 100 grs",
+        category: 'vegano',
+        stock: 5
+       },
+       {
+        id: 89,
+        name:"Barrita proteica vegana de chocolate y mani",
+        price: 900,
+        image: `${direccion}BarraProteica.jpg`,
+        description: "x 17 grs",
+        category: 'vegano',
+        stock: 5
+       },
+       {
+        id: 90,
+        name:"Stevia Best",
+        price: 1990,
+        image: `${direccion}Stevia.jpg`,
+        description: "x 110 ml",
+        category: 'vegano',
         stock: 20
+       },
 
-    },
-    {
-        id: 50,
-        name:"Producto Vegano-Not chicken burger-x2uds",
-        price: 1220,
-        image: "/img/Producto Vegano-Not chicken burger-x2uds.jpg",
-        description: "Productos Veganos",
-        category: 'Veganos',
-        stock: 18
-    },
-    {
-        id: 51,
-        name:"Producto Vegano-Erititrol-x100grs",
-        price: 3000,
-        image: "/img/Producto Vegano-Erititrol-x100grs.jpg",
-        description: "Productos Veganos",
-        category: 'Veganos',
-        stock: 16
-    },
+       {
+        id: 91,
+        name:"Not cheese bastoncitos",
+        price: 2180,
+        image: `${direccion}Bastoncitos.jpg`,
+        description: "x 300 ml",
+        category: 'vegano',
+        stock: 40
+       },
+       {
+        id: 92,
+        name:"Chocolatada en polvo con leche de coco",
+        price: 2420,
+        image: `${direccion}Chocolatada.jpg`,
+        description: "x 150 grs",
+        category: 'vegano',
+        stock: 25
+       },
+       {
+        id: 93,
+        name:"Not meat picada",
+        price: 3500,
+        image: `${direccion}Picada.jpg`,
+        description: "x 400 grs",
+        category: 'vegano',
+        stock: 15
+       },
+       {
+        id: 94,
+        name:"Hummus de Palta",
+        price: 1290,
+        image: `${direccion}Palta.jpg`,
+        description: "x 220 grs",
+        category: 'vegano',
+        stock: 10
+       },
 
-
-  
 ]

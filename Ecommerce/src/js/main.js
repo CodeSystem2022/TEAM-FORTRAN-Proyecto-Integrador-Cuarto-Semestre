@@ -11,6 +11,7 @@ const createProduct = ({name, price, image, description}) => {
     <span class="precio">$${price}</span>
     <button>Añadir al carrito</button>`;
     contenedor.appendChild(div);
+    div.getElementsByTagName("button")[0].addEventListener("click", ()=> agregarAlCarrito(products))
 }
 
 const loadSection = (section) => {
