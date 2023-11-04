@@ -1,23 +1,33 @@
-import {products} from "./products.js";
+import { products } from "./products.js";
+
 console.log('hola');
-const contenedor = document.querySelector(".fila-productos");
-const createProduct = ({name, price, image, description}) => {
-    const div = document.createElement("div");
-    div.classList.add("producto");
-    div.innerHTML = `
-    <img src="${image}" alt="${description}">
-    <h2>${name}</h2>
-    <p>${description}</p>
-    <span class="precio">$${price}</span>
-    <button>Añadir al carrito</button>`;
-    contenedor.appendChild(div);
-    div.getElementsByTagName("button")[0].addEventListener("click", ()=> agregarAlCarrito(products))
+
+const contenedorTarjeta = document.querySelector(".fila-productos");
+
+function createTarjetaProductoInicio(products) {
+    products.forEach(product => { 
+        const nuevoProducto = document.createElement("div");
+        nuevoProducto.classList = "tarjeta-producto";
+        nuevoProducto.innerHTML = `
+           <img src="${product.image}" alt="${product.description}">
+            <h2>${product.name}</h2>
+            <p>${product.description}</p>
+            <span class="precio">$${product.price}</span>
+            <button data-product-id="${product.id}">Añadir al carrito</button> 
+        `;
+        contenedorTarjeta.appendChild(nuevoProducto);
+
+        nuevoProducto.getElementsByTagName("button")[0].addEventListener("click", () => agregarAlCarrito(product));
+        
+    });
 }
 
 const loadSection = (section) => {
-    contenedor.innerHTML = "";
-    products.forEach( product => {
-        product.category === section ? createProduct(product) : null
+    contenedorTarjeta.innerHTML = "";
+    products.forEach(product => {
+        if (product.category === section) {
+            createTarjetaProductoInicio([product]);
+        }
     });
 }
 
@@ -47,3 +57,4 @@ btnCosmetica.addEventListener("click", (e) => {
     loadSection('cosmetica');
 })
 
+createTarjetaProductoInicio(products);
