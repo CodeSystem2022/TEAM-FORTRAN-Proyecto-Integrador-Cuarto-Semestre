@@ -11,13 +11,26 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="./js/main.js" defer type="module"></script>
     <title>Terra Dietética</title>
+    <script src="https://kit.fontawesome.com/b408879b64.js"
+    crossorigin="anonymous"></script>
 </head>
 <body>
+   
     <header class="header">
         <div class="contenedor">
             <div class="logo">
                 <img width="300" height="300" src="./assets/logo/logo.png" alt="Tienda Saludable">
             </div>
+            <div class="container">
+                <h1>Buscador de productos</h1>
+                <!--esto seria el buscador-->
+                 <input type="text" id="buscador" placeholder="Buscar ..">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                
+            </div>
+            <div id="resultados"></div>
+            <script src="producto.js"></script>
+            <script src="script.js"></script>
         </div>
         <nav>
             <ul class="cont-ul">
@@ -83,8 +96,8 @@
             ademas con productos sin tacc y crueltry free para poder satisfacer todas sus necedidades.</p>
 
         <!-- seccion ubicacion -->
-        <section class="ubicacion" id="ubicacion">
-            <h3 class="titulo-ubicacion">Ubicacion</h3>
+        <section  class="ubicacion" id="ubicacion">
+            <h3  class="titulo-ubicacion">Ubicacion</h3>
             <div class="contenedor-ubicacion">
                 <div class="direccion-ubicacion">
                     <p class="calle"> San Martin 150 Argentina</p>
@@ -103,13 +116,38 @@
                 width="1600" height="550" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
+       
 
     <footer>
-        <div class="footer">
+        <div class="footer2">
+            <h1 style="color: black;"><i>Tienda Online</i></h1>
+            <br>
+            <p align="center"><i>Medios de Pago</i></p>
+            <br>
+            <p align="center"><i> Sobre Mujeres</i></p>
+            <br>
+            <p align="center"><i>Sobre Hombres</i></p>
+            <br>
+            <p align="center"><i>Sobre Niños</i></p>
+            </div>
+            <div style="position:static; top: 0; left: 0; margin-top: -220px; text-align: right;"   class="footer">
+                <h2  style="color: black;">Sobre Terra Dietetica</h2>
+                <br>
+                <p  style="color: black;" ><em>Preguntas Frecuentes</em></p>
+                <br>
+                <p  style="color: black;"><em>Cambios y Devoluciones</em></p>
+                <br>
+                <p style="color: black;"><em>Contacto</em></p>
+                <br>
+              </div>
+
             <div class="copyright">
                 <p>Copyright TeamFortran @ 2023</p>
             </div>
         </div>
+    </div>
+    
+
     </footer>
 
 </body>

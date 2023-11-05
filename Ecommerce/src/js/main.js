@@ -45,4 +45,3 @@ btnNatural.addEventListener("click", (e) => {
 btnCosmetica.addEventListener("click", (e) => {
     loadSection('cosmetica');
 })
-

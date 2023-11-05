@@ -9,11 +9,48 @@
 body {
   font-family: "Open Sans", Arial, Sans-serif;
   font-size: 16px;
+  
+}
+/*Buscador esto */
+.container{
+  position:auto;
+  
+}
+input{
+  padding:10px;
+  padding-right: 35px;
+  border-radius: 5px 0 0 5px;
+  border: 0;
+  outline: none;
+  font-size: 1rem;
+}
+button{
+  background-color: crimson;
+  width: 31px;
+  height: 31px;
+  padding: 10px;
+  position: auto;
+  border: 0;
+  top:0;
+  bottom:0;
+  right:0;
+  margin:auto;
+  border-radius:0 5px 5px 0;
+  color:#fff;
+  cursor:pointer;
+  
+}
+buton:hover{
+  background-color: darkred;
 }
 
 /* -------------- FOOTER ---------------- */
+
+
 footer {
-  background-color: #000;
+  background-color:grey;
+  display: grid;
+  place-items: right;
 }
 
 footer .copyright {
@@ -138,11 +175,12 @@ footer {
 }
 
 .titulo-ubicacion {
-  text-align: center;
+  text-align:center;
 }
 
 .contenedor-ubicacion {
   display: flex;
+  text-align:center;
   justify-content: space-around;
   overflow: hidden;
   padding: 1rem;
@@ -150,6 +188,7 @@ footer {
 
 .direccion-ubicacion {
   display: flex;
+  text-align: center;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
