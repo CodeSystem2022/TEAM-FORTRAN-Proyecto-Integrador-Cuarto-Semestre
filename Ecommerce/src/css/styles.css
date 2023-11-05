@@ -43,6 +43,311 @@ button{
 buton:hover{
   background-color: darkred;
 }
+/* -------------- P Destacados ---------------- */
+/* ********************************** */
+/*             UTILIDADES             */
+/* ********************************** */
+.container {
+	max-width: 12rem;
+	margin: 0 auto;
+}
+
+.heading-1 {
+	text-align: center;
+	font-weight: 5000;
+	font-size: 3rem;
+}
+
+/* ********************************** */
+/*             CATEGORIES             */
+/* ********************************** */
+
+.top-categories {
+  height: 20rem;
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+	margin-bottom: 2rem;
+	height: min-content;
+}
+
+.container-categories {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
+}
+
+.card-category {
+	height: 20rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 20rem;
+	gap: 20rem;
+}
+
+.category-Vegano{
+	background-image: linear-gradient(#28b22f58, #00000080),
+		url('./img/vegano-category.jpg');
+	background-size: cover;
+	background-position: bottom;
+	background-repeat: no-repeat;
+}
+
+.category-Keto{
+	background-image: linear-gradient(#73282880, #00000080),
+		url('./img/Keto-category.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.category-Natural {
+	background-image: linear-gradient(#edac2ab7, #00000080),
+		url('./img/Natural-category.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.category-tacc {
+	background-image: linear-gradient(rgba(12, 62, 11, 0.718), #00000080),
+		url('../assets/img/tacc.jpeg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: none;
+}
+
+.category-cosmetica {
+	background-image: linear-gradient(#5a513eb7, #00000080),
+		url('../assets/img/cosmetica.jpeg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: none;
+}
+
+.card-category p {
+	font-size: 2.5rem;
+	color: #fff;
+	text-transform: capitalize;
+	position: relative;
+}
+
+.card-category p::after {
+	content: '';
+	width: 2.5rem;
+	height: 2px;
+	background-color: #fff;
+	position: absolute;
+	bottom: -1rem;
+	left: 50%;
+	transform: translate(-50%, 50%);
+}
+
+.card-category span {
+	font-size: 1.6rem;
+	color: #fff;
+	cursor: pointer;
+}
+
+.card-category span:hover {
+	color: var(--primary-color);
+}
+
+/* ********************************** */
+/*            TOP PRODUCTS            */
+/* ********************************** */
+.top-products {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	margin-bottom: 3rem;
+}
+
+.container-options {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	margin-bottom: 1rem;
+}
+
+.container-options span {
+	color: #777;
+	background-color: #fff;
+	padding: 0.7rem 3rem;
+	font-size: 1.0rem;
+	text-transform: capitalize;
+	border-radius: 2rem;
+	cursor: pointer;
+}
+
+.container-options span:hover {
+	background-color: var(--primary-color);
+	color: #fff;
+}
+
+.container-options span.active {
+	background-color: var(--primary-color);
+	color: #fff;
+}
+
+/* Products */
+.container-products {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+	gap: 1rem;
+}
+
+.card-product {
+	background-color: #fff;
+	padding: 2rem 3rem;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.container-img {
+	position: relative;
+}
+
+.container-img img {
+	width: 100%;
+}
+
+.container-img .discount {
+	position: absolute;
+	left: 0;
+	background-color: var(--primary-color);
+	color: #fff;
+	padding: 2px 0.5rem;
+	border-radius: 1rem;
+	font-size: 1.2rem;
+}
+
+.card-product:hover .discount {
+	background-color: #000;
+}
+
+.button-group {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+
+	position: absolute;
+	top: 0;
+	right: -3rem;
+	z-index: -1;
+	transition: all 0.4s ease;
+}
+
+.button-group span {
+	border: 1px solid var(--primary-color);
+	padding: 0.8rem;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: all 0.4s ease;
+}
+
+.button-group span:hover {
+	background-color: var(--primary-color);
+}
+
+.button-group span i {
+	font-size: 1.5rem;
+	color: var(--primary-color);
+}
+
+.button-group span:hover i {
+	color: #fff;
+}
+
+.card-product:hover .button-group {
+	z-index: 0;
+	right: -1rem;
+}
+
+.content-card-product {
+	display: grid;
+	justify-items: left;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: repeat(4, min-content);
+	row-gap: 1rem;
+}
+
+.stars {
+	grid-row: 1/2;
+	grid-column: 1/-1;
+}
+
+.stars i {
+	font-size: 1.3rem;
+	color: var(--primary-color);
+}
+
+.content-card-product h3 {
+	grid-row: 2/3;
+	grid-column: 1/-1;
+
+	font-weight: 400;
+	font-size: 1.6rem;
+	margin-bottom: 1rem;
+	cursor: pointer;
+}
+
+.content-card-product h3:hover {
+	color: var(--primary-color);
+}
+
+.add-cart {
+	justify-self: start;
+	border: 2px solid var(--primary-color);
+	padding: 1rem;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: all 0.4s ease;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.add-cart:hover {
+	background-color: var(--primary-color);
+}
+
+.add-cart i {
+	font-size: 1.5rem;
+	color: var(--primary-color);
+}
+
+.add-cart:hover i {
+	color: #fff;
+}
+
+.content-card-product .price {
+	justify-self: end;
+	align-self: center;
+
+	font-size: 1.7rem;
+	font-weight: 600;
+}
+
+.content-card-product .price span {
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-decoration: line-through;
+	color: #777;
+	margin-left: 0.5rem;
+}
+
+
 
 /* -------------- FOOTER ---------------- */
 
@@ -80,6 +385,32 @@ header {
   display: block;
 }
 
+#cuenta-carrito{
+  background-color: #ee6130;
+  border-radius: 100%;
+  display: inline-block;
+  width: 20px;
+  line-height: 20px;
+  aspect-ratio: 1;
+  text-align: center;
+  position: absolute;
+}
+
+/*CARROUSEL*/
+
+.d-item {
+  height: 600px;
+  }
+  
+.d-img {
+  height: 100%;
+  object-fit: cover;
+    
+  display: flex;
+  width: 100%;
+  gap: 1rem;  
+  }
+
 .galeria{
 display: flex;
 justify-content: center;
@@ -102,13 +433,15 @@ footer {
   padding: 10px;
 }
 
+/*Main del js*/
+
 .fila-productos {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.producto {
+.tarjeta-producto {
   background-color: #fff;
   padding: 20px;
   margin: 20px;
@@ -121,29 +454,29 @@ footer {
   flex-direction: column;
 }
 
-.producto img {
+.tarjeta-producto img {
   max-width: 100%;
   height: auto;
 }
 
-.producto h2 {
+.tarjeta-producto h2 {
   font-size: 20px;
   color: #333;
 }
 
-.producto p {
+.tarjeta-producto p {
   font-size: 14px;
   color: #666;
   margin: 10px 0;
 }
 
-.producto .precio {
+.tarjeta-producto .precio {
   font-size: 18px;
   color: #9b5f0b;
   font-weight: bold;
 }
 
-.producto button {
+.tarjeta-producto button {
   background-color: #8c5509;
   color: #fff;
   border: none;
@@ -156,9 +489,11 @@ footer {
   margin: 10px auto;
 }
 
-.producto button:hover {
+.tarjeta-producto button:hover {
   background-color: #9d7415;
 }
+
+/*Ubicacion map*/
 
 .mapa {
   width: 100%;
@@ -202,7 +537,6 @@ footer {
 }
 
 nav {
-  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -213,6 +547,7 @@ nav {
 .cont-ul {
   display: flex;
   align-items: center;
+  margin: 0;
 }
 
 li {
@@ -259,4 +594,187 @@ li:hover {
 
 .btn-section:hover>.dropdown-menu {
   display: block;
+<<<<<<< HEAD
 }
+=======
+  background-color: transparent;
+  border: none;
+}
+
+/*. -------- estilos para movil ---------- */
+
+@media only screen and (max-width: 576px) {
+
+	/*! ---------header---------- */
+	.cont-ul {
+		padding: 0;
+		margin: 0;
+	}
+
+	.cont-ul>li:not(:last-child) {
+		display: none;
+	}
+
+	.header {
+		display: flex;
+		height: 10vh;
+		width: 100vw;
+		justify-content: space-between;
+		gap: 2rem;
+		padding-right: 1rem;
+		background: rgb(239, 234, 147);
+		background: linear-gradient(90deg, rgba(239, 234, 147, 1) 0%, rgba(206, 178, 107, 1) 53%, rgba(189, 148, 19, 1) 100%);
+		position: fixed;
+		z-index: 100;
+	}
+
+	.logo {
+		height: 100%;
+	}
+
+	.logo>img {
+		width: max-content;
+		height: 100%;
+	}
+
+	nav {
+		width: max-content;
+		background-color: transparent;
+	}
+
+	/*!  ---------carousel---------- */
+	.carousel-inner {
+		padding-top: 10vh;
+		height: 40vh;
+	}
+
+	.carousel-item {
+		height: 100%;
+	}
+
+	/*!  ---------galeria---------- */
+	.galeria {
+		display: none;
+	}
+
+	/*!  ---------productos---------- */
+	.fila-productos {
+		padding: 10px 0;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.tarjeta-producto {
+		display: flex;
+		flex-direction: row;
+		gap: .5rem;
+		align-items: center;
+		justify-content: space-between;
+		height: 10vh;
+		width: 95vw;
+		max-width: 95vw;
+		padding: 0 5px;
+		margin: 0 10px;
+		border-radius: 15px;
+		box-shadow: 4px 4px 8px #d7d7d7,
+			-4px -4px 8px #ffffff;
+	}
+
+	.tarjeta-producto img {
+		width: 70px;
+		height: 90px;
+		object-fit: cover;
+	}
+
+	.tarjeta-producto h2 {
+		max-width: 30%;
+		font-size: 18px;
+	}
+
+	.tarjeta-producto p {
+		display: none;
+	}
+
+	.tarjeta-producto button {
+		width: 30px;
+		height: 30px;
+		padding: 0;
+		margin: 0;
+		border-radius: 50%;
+		overflow: hidden;
+	}
+
+	.tarjeta-producto button::before {
+		content: '+       ';
+	}
+
+	.tarjeta-producto button:hover {
+		background-color: #ee6130;
+		transition: all .3s ease;
+	}
+
+	/*!  ---------secciones---------- */
+
+	.category-tacc{
+		display: flex;}
+
+	.category-cosmetica{
+		display: flex;
+	}
+
+	.top-categories {
+		width: 100vw;
+		height: min-content;
+		display: flex;
+		align-items: center;
+		padding: 10px 0;
+		margin: 0;
+		gap: 1rem;
+	}
+
+	.container-products {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.card-category {
+		height: 150px;
+		width: 300px;
+		border-radius: 15px;
+	}
+
+	/* ! p ---------ubicacion---------- */
+	.ubicacion {
+		background-color: rgb(211, 235, 243);
+		margin: 0;
+	}
+
+	/*!  ---------mapa---------- */
+	.mapa {
+		display: none;
+	}
+
+	/*!  ---------footer---------- */
+	footer {
+		padding: 0;
+	}
+
+	.footer {
+		height: 5vh;
+	}
+
+	footer .copyright {
+		padding: 0;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.copyright p {
+		padding: 0;
+		margin: 0;
+	}
+}
+>>>>>>> 689208b86e96fc326e92bda74f6411d0250a8734
