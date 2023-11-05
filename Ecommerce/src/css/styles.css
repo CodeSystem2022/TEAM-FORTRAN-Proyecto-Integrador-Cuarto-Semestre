@@ -34,7 +34,8 @@ body {
 	display: flex;
 	flex-direction: column;
 	gap: 4rem;
-	margin-bottom: 12rem;
+	margin-bottom: 2rem;
+	height: min-content;
 }
 
 .container-categories {
@@ -75,6 +76,24 @@ body {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+}
+
+.category-tacc {
+	background-image: linear-gradient(rgba(12, 62, 11, 0.718), #00000080),
+		url('../assets/img/tacc.jpeg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: none;
+}
+
+.category-cosmetica {
+	background-image: linear-gradient(#5a513eb7, #00000080),
+		url('../assets/img/cosmetica.jpeg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: none;
 }
 
 .card-category p {
@@ -479,7 +498,6 @@ footer {
 }
 
 nav {
-  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -490,6 +508,7 @@ nav {
 .cont-ul {
   display: flex;
   align-items: center;
+  margin: 0;
 }
 
 li {
@@ -536,4 +555,183 @@ li:hover {
 
 .btn-section:hover>.dropdown-menu {
   display: block;
+  background-color: transparent;
+  border: none;
+}
+
+/*. -------- estilos para movil ---------- */
+
+@media only screen and (max-width: 576px) {
+
+	/*! ---------header---------- */
+	.cont-ul {
+		padding: 0;
+		margin: 0;
+	}
+
+	.cont-ul>li:not(:last-child) {
+		display: none;
+	}
+
+	.header {
+		display: flex;
+		height: 10vh;
+		width: 100vw;
+		justify-content: space-between;
+		gap: 2rem;
+		padding-right: 1rem;
+		background: rgb(239, 234, 147);
+		background: linear-gradient(90deg, rgba(239, 234, 147, 1) 0%, rgba(206, 178, 107, 1) 53%, rgba(189, 148, 19, 1) 100%);
+		position: fixed;
+		z-index: 100;
+	}
+
+	.logo {
+		height: 100%;
+	}
+
+	.logo>img {
+		width: max-content;
+		height: 100%;
+	}
+
+	nav {
+		width: max-content;
+		background-color: transparent;
+	}
+
+	/*!  ---------carousel---------- */
+	.carousel-inner {
+		padding-top: 10vh;
+		height: 40vh;
+	}
+
+	.carousel-item {
+		height: 100%;
+	}
+
+	/*!  ---------galeria---------- */
+	.galeria {
+		display: none;
+	}
+
+	/*!  ---------productos---------- */
+	.fila-productos {
+		padding: 10px 0;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.tarjeta-producto {
+		display: flex;
+		flex-direction: row;
+		gap: .5rem;
+		align-items: center;
+		justify-content: space-between;
+		height: 10vh;
+		width: 95vw;
+		max-width: 95vw;
+		padding: 0 5px;
+		margin: 0 10px;
+		border-radius: 15px;
+		box-shadow: 4px 4px 8px #d7d7d7,
+			-4px -4px 8px #ffffff;
+	}
+
+	.tarjeta-producto img {
+		width: 70px;
+		height: 90px;
+		object-fit: cover;
+	}
+
+	.tarjeta-producto h2 {
+		max-width: 30%;
+		font-size: 18px;
+	}
+
+	.tarjeta-producto p {
+		display: none;
+	}
+
+	.tarjeta-producto button {
+		width: 30px;
+		height: 30px;
+		padding: 0;
+		margin: 0;
+		border-radius: 50%;
+		overflow: hidden;
+	}
+
+	.tarjeta-producto button::before {
+		content: '+       ';
+	}
+
+	.tarjeta-producto button:hover {
+		background-color: #ee6130;
+		transition: all .3s ease;
+	}
+
+	/*!  ---------secciones---------- */
+
+	.category-tacc{
+		display: flex;}
+
+	.category-cosmetica{
+		display: flex;
+	}
+
+	.top-categories {
+		width: 100vw;
+		height: min-content;
+		display: flex;
+		align-items: center;
+		padding: 10px 0;
+		margin: 0;
+		gap: 1rem;
+	}
+
+	.container-products {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.card-category {
+		height: 150px;
+		width: 300px;
+		border-radius: 15px;
+	}
+
+	/* ! p ---------ubicacion---------- */
+	.ubicacion {
+		background-color: rgb(211, 235, 243);
+		margin: 0;
+	}
+
+	/*!  ---------mapa---------- */
+	.mapa {
+		display: none;
+	}
+
+	/*!  ---------footer---------- */
+	footer {
+		padding: 0;
+	}
+
+	.footer {
+		height: 5vh;
+	}
+
+	footer .copyright {
+		padding: 0;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.copyright p {
+		padding: 0;
+		margin: 0;
+	}
 }

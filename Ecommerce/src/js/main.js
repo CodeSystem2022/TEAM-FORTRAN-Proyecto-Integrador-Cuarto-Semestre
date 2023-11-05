@@ -1,7 +1,5 @@
 import { products } from "./products.js";
 
-console.log('hola');
-
 const contenedorTarjeta = document.querySelector(".fila-productos");
 
 function createTarjetaProductoInicio(products) {
@@ -57,4 +55,4 @@ btnCosmetica.addEventListener("click", (e) => {
     loadSection('cosmetica');
 })
 
-createTarjetaProductoInicio(products);
+// createTarjetaProductoInicio(products);
