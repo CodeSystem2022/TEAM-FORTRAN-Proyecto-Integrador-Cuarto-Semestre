@@ -35,6 +35,12 @@ const btnKeto = document.querySelector(".btn-keto");
 const btnNatural = document.querySelector(".btn-Natural");
 const btnCosmetica = document.querySelector(".btn-cosmetica");
 
+// Destacados
+const btnVeganoDestacado = document.querySelector(".btn-vegano-destacado");
+const btnKetoDestacado = document.querySelector(".btn-keto-destacado");
+const btnNaturalDestacado = document.querySelector(".btn-natural-destacado");
+
+
 btnTacc.addEventListener("click", (e) => {
     loadSection('tacc');
 });
@@ -54,4 +60,18 @@ btnNatural.addEventListener("click", (e) => {
 btnCosmetica.addEventListener("click", (e) => {
     loadSection('cosmetica');
 })
+
+// Destacados
+
+btnVeganoDestacado.addEventListener("click", (e) => {
+    loadSection('VeganoDestacado'); // Cambia 'VeganoDestacado' por el nombre real de tu categoría destacada
+});
+
+btnKetoDestacado.addEventListener("click", (e) => {
+    loadSection('KetoDestacado'); // Cambia 'VeganoDestacado' por el nombre real de tu categoría destacada
+});
+
+btnNaturalDestacado.addEventListener("click", (e) => {
+    loadSection('NaturalDestacado'); // Cambia 'VeganoDestacado' por el nombre real de tu categoría destacada
+});
 

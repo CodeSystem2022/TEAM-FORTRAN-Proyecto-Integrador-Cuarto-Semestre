@@ -33,9 +33,13 @@ body {
 }
 
 .heading-1 {
+	font-family: 'Montserrat', sans-serif;
+	color: #8B4513;
 	text-align: center;
 	font-weight: 5000;
-	font-size: 3rem;
+	font-size: 32px;
+	margin-top: 30px;
+	border-bottom: 2px dotted #8B4513;
 }
 
 /* ********************************** */
@@ -107,6 +111,23 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	display: none;
+}
+
+
+.btn-vegano-destacado,
+.btn-keto-destacado,
+.btn-natural-destacado {
+    background-color: tan;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 .card-category p {
