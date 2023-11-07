@@ -750,8 +750,105 @@ export const products = [
          description: "x 50 grs c/u",
          category : 'cosmetica',
          stock : 12
-     },
- 
 
-  
+     },{id: 84,
+     name:"Entre Nuts Pasta de mani ",
+     price: 1400,
+     image: `${direccion}Pastademani.jpeg`,
+     description: "x 400 grs",
+     category: 'vegano',
+     stock: 16
+    },
+       {
+        id: 85,
+        name:"Aceite de coco en aerosol Chia ",
+        price: 4140,
+        image: `${direccion}AceiteCoco.jpeg`,
+        description: "x 150 grs",
+        category: 'vegano',
+        stock: 9
+       },
+       {
+        id: 86,
+        name:"Not dulce de leche",
+        price: 1180,
+        image: `${direccion}Dulcedeleche.jpeg`,
+        description: "x 250 grs",
+        category: 'vegano',
+        stock: 10
+       },
+       {
+        id: 87,
+        name:"Pepas de membrillo",
+        price: 940,
+        image: `${direccion}Pepas.jpeg`,
+        description: "x 300 grs",
+        category: 'vegano',
+        stock: 10
+       },
+       {
+        id: 88,
+        name:"Semillas de psyllium",
+        price: 920,
+        image: `${direccion}Semillas.jpeg`,
+        description: "x 100 grs",
+        category: 'vegano',
+        stock: 5
+       },
+       {
+        id: 89,
+        name:"Barrita proteica vegana de chocolate y mani",
+        price: 900,
+        image: `${direccion}BarraProteica.jpg`,
+        description: "x 17 grs",
+        category: 'vegano',
+        stock: 5
+       },
+       {
+        id: 90,
+        name:"Stevia Best",
+        price: 1990,
+        image: `${direccion}Stevia.jpg`,
+        description: "x 110 ml",
+        category: 'vegano',
+        stock: 20
+       },
+
+       {
+        id: 91,
+        name:"Not cheese bastoncitos",
+        price: 2180,
+        image: `${direccion}Bastoncitos.jpg`,
+        description: "x 300 ml",
+        category: 'vegano',
+        stock: 40
+       },
+       {
+        id: 92,
+        name:"Chocolatada en polvo con leche de coco",
+        price: 2420,
+        image: `${direccion}Chocolatada.jpg`,
+        description: "x 150 grs",
+        category: 'vegano',
+        stock: 25
+       },
+       {
+        id: 93,
+        name:"Not meat picada",
+        price: 3500,
+        image: `${direccion}Picada.jpg`,
+        description: "x 400 grs",
+        category: 'vegano',
+        stock: 15
+       },
+       {
+        id: 94,
+        name:"Hummus de Palta",
+        price: 1290,
+        image: `${direccion}Palta.jpg`,
+        description: "x 220 grs",
+        category: 'vegano',
+        stock: 10
+       },
+
 ]
