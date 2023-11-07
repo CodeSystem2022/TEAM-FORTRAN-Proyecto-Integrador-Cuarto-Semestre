@@ -1,6 +1,8 @@
 import { products } from "./products.js";
 
 const contenedorTarjeta = document.querySelector(".fila-productos");
+const seccionProductos = document.querySelector(".fila-productos");
+
 
 function createTarjetaProductoInicio(products) {
     products.forEach(product => { 
@@ -28,6 +30,14 @@ const loadSection = (section) => {
         }
     });
 }
+
+// Boton inicio
+const btnInicio = document.getElementById("btn-inicio");
+btnInicio.addEventListener("click", () => {
+  location.reload();
+});
+
+
 
 const btnTacc = document.querySelector(".btn-tacc");
 const btnVeggie = document.querySelector(".btn-veggie");
