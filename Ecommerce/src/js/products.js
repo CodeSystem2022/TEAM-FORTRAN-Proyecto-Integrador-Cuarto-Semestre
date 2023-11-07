@@ -851,4 +851,150 @@ export const products = [
         stock: 10
        },
 
+       //DESTACADOS
+       {
+        id: 95,
+        name:"Smootie Vegano",
+        price: 950,
+        image: `${direccion}VeganoSmoothie.jpg`,
+        description: "x 220 grs",
+        category: 'VeganoDestacado',
+        stock: 10
+       },
+       {
+        id: 96,
+        name:"Granola",
+        price: 2910,
+        image: `${direccion}granola.jpg`,
+        description: "x 220 grs",
+        category: 'NaturalDestacado',
+        stock: 10
+       },
+       {
+        id: 97,
+        name:"Kiwi Deshidratado",
+        price: 2750,
+        image: `${direccion}KiwiDeshidratado.jpg`,
+        description: "x 300 grs",
+        category: 'NaturalDestacado',
+        stock: 10
+       },
+       {
+        id: 98,
+        name:"Budin Keto",
+        price: 750,
+        image: `${direccion}BudinKeto.jpeg`,
+        description: "x 400 grs",
+        category: 'KetoDestacado',
+        stock: 10
+       },
+       {
+        id: 99,
+        name: "Tomates Secos",
+        price: 1900,
+        image: `${direccion}TomatesSecos.jpg`,
+        description: "Producto Natural",
+        category : 'NaturalDestacado',
+        stock : 14.2
+    },
+    {
+        id: 100,
+        name: "Tofu Soyland" ,
+        price: 1430,
+        image: `${direccion}VeganoTofuSoyland.jpg`,
+        description: "x 320 grs",
+        category : 'VeganoDestacado',
+        stock : 0
+     },
+       {
+        id: 101,
+        name:"Stevia Best",
+        price: 1990,
+        image: `${direccion}Stevia.jpg`,
+        description: "x 110 ml",
+        category: 'VeganoDestacado',
+        stock: 20
+       },
+       {
+        id: 102,
+        name: "Castañas de Caju",
+        price: 3750,
+        image: `${direccion}CastañasDeCaju.jpg`,
+        description: "Producto Natural",
+        category : 'NaturalDestacado',
+        stock : 2.3
+    },
+    {
+        id: 103,
+        name: "Mix Frutos Secos",
+        price: 1450,
+        image: `${direccion}MixFrutosSecos.jpg`,
+        description: "Producto Natural",
+        category : 'NaturalDestacado',
+        stock : 24
+    },
+    {
+        id: 104,
+        name: "Nuez Mariposa",
+        price: 2880,
+        image: `${direccion}NuezMariposa.jpg`,
+        description: "Producto Natural",
+        category : 'NaturalDestacado',
+        stock : 7.6
+    },
+    {
+        id: 105,
+        name: "Galletas Keto",
+        price: 600,
+        image: `${direccion}GalletasKeto.jpeg`,
+        description: "productos Keto",
+        category : 'KetoDestacado',
+        stock : 10
+    },
+    {
+        id: 106,
+        name: "Dulce Keto",
+        price: 600,
+        image: `${direccion}DulceKeto.jpeg`,
+        description: "productos Keto",
+        category : 'KetoDestacado',
+        stock : 10
+    },
+    {
+        id: 107,
+        name: "Pastas Alubia y Quinoa" ,
+        price: 1500,
+        image:`${direccion}VeganoPastasAlubiaQuinoa.jpg`,
+        description: "x 250 grs",
+        category : 'VeganoDestacado' ,
+        stock : 16
+      },
+      {
+          id: 108,
+          name: "Galletitas Natural Veganas" ,
+          price: 600,
+          image: `${direccion}VeganoGalletitasNatural.jpg`,
+          description: "x 180 grs",
+          category : 'VeganoDestacado',
+          stock: 20
+      },
+      {
+        id: 109,
+        name: "Barra Energetica Keto",
+        price: 600,
+        image: `${direccion}BarraEnergeticaKeto.jpeg`,
+        description: "productos Keto",
+        category : 'KetoDestacado',
+        stock : 10
+    },
+    {
+        id: 110,
+        name: "Brounis Keto",
+        price: 600,
+        image: `${direccion}BrounisKeto.jpeg`,
+        description: "productos Keto",
+        category : 'KetoDestacado',
+        stock : 10
+    },
+
 ]

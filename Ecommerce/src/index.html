@@ -8,31 +8,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/cart.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="./js/main.js" defer type="module"></script>
     <script src="./js/carrito.js" defer></script>
+    <script src="./js/cart.js"></script>
     <title>Terra Dietética</title>
-    <script src="https://kit.fontawesome.com/b408879b64.js"
-    crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-   
     <header class="header">
         <div class="contenedor">
             <div class="logo">
                 <img width="300" height="300" src="./assets/logo/logo-wo-bg.png" alt="Tienda Saludable">
             </div>
-            <div class="container">
-                <h1>Buscador de productos</h1>
-                <!--esto seria el buscador-->
-                 <input type="text" id="buscador" placeholder="Buscar ..">
-                <button><i class="fa-solid fa-magnifying-glass"></i></button>
-                
-            </div>
-            <div id="resultados"></div>
-            <script src="producto.js"></script>
-            <script src="script.js"></script>
         </div>
         <nav>
             <ul class="cont-ul">
@@ -66,6 +56,9 @@
           </div>
           <div class="carousel-item  d-item">
             <img src="./assets/img/10.png" class="d-block w-100 d-img" alt="...">
+          </div>
+          <div class="carousel-item  d-item">
+            <img src="./assets/img/11.jpg" class="d-block w-100 d-img" alt="...">
           </div>
 
         </div>
@@ -114,34 +107,45 @@
             </div>
         </section>
 
-           <!-- Seccion categorias -->
+        <!-- Seccion categorias -->
+     <section class="container top-categories">
+        <h1 class="heading-1">Categorías destacadas</h1>
+        <div class="container-products">
+            <div class="card-category category-Vegano">
+                 <button class="btn-vegano-destacado">Vegano</button>
+            </div>
+            <div class="card-category category-Keto">
+               <button class="btn-keto-destacado">Keto</button>
+            </div>
+            <div class="card-category category-Natural">
+               <button class="btn-natural-destacado">Natural</button>
+            </div>
+            <div class="card-category category-tacc">
+               <p>Sin tacc</p>
+           </div>
+           <div class="card-category category-cosmetica">
+               <p>Cosmetica</p>
+           </div>
+        </div>
+    </section>        
+
         <div class="fila-productos">
         </div>
      <!-- seccion productos destacados -->
-     <main class="main-content"></main>
-     <section class="container top-categories">
-         <h1 class="heading-1">Mejores Categorías</h1>
-         <div class="container-products">
-             <div class="card-category category-Vegano">
-                 <p>Vegano</p>
-             </div>
-             <div class="card-category category-Keto">
-                 <p>Keto</p>
-             </div>
-             <div class="card-category category-Natural">
-                 <p>Natural</p>
-             </div>
-             <div class="card-category category-tacc">
-                <p>Sin tacc</p>
-            </div>
-            <div class="card-category category-cosmetica">
-                <p>Cosmetica</p>
-            </div>
-         </div>
-     </section>
+     <main class="main-content">
+        <!--<p> Up no productos en carrito!!</p>
+        <section class="container top-products"></section>
+        <section id="totales">
+           <p>Total unidades: <span id|="unidades">0</span></p>
+            <p>Total precio: <span id="precio">0</span></p>  
+            <button disabled>Comprar</button>
+            <button>Reiniciar carrito</button>
+        </section>
+     </main>-->
+
 
          <section class="container top-products">
-             <h1 class="heading-1">Mejores Productos</h1>
+             <h1 class="heading-1">Ofertas Imperdibles</h1>
              <div class="container-products">
                  <!-- Producto 1 -->
                  <div class="card-product">
@@ -338,20 +342,9 @@
      </main>
      
 
-
-        <!-- seccion acerca de -->
-        <h3>Acerca de</h3>
-        <p>Bienvenido a Terra, Dietetica, tu destino confiable para una alimentación saludable y equilibrada. 
-            Nos enorgullecemos de ofrecer una amplia gama de productos nutritivos y saludables, 
-            cuidadosamente seleccionados para apoyar tu estilo de vida activo y equilibrado. Contamos
-            ademas con productos sin tacc y crueltry free para poder satisfacer todas sus necedidades.</p>
-
-
-
-
         <!-- seccion ubicacion -->
-        <section  class="ubicacion" id="ubicacion">
-            <h3  class="titulo-ubicacion">Ubicacion</h3>
+        <section class="ubicacion" id="ubicacion">
+            <h3 class="titulo-ubicacion">Ubicacion</h3>
             <div class="contenedor-ubicacion">
                 <div class="direccion-ubicacion">
                     <p class="calle"> San Martin 150 Argentina</p>
@@ -371,39 +364,12 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
 
-    
-        <!-- seccion footer -->
-
     <footer>
-        <div class="footer2">
-            <h1 style="color: black;"><i>Tienda Online</i></h1>
-            <br>
-            <p align="center"><i>Medios de Pago</i></p>
-            <br>
-            <p align="center"><i> Sobre Mujeres</i></p>
-            <br>
-            <p align="center"><i>Sobre Hombres</i></p>
-            <br>
-            <p align="center"><i>Sobre Niños</i></p>
-            </div>
-            <div style="position:static; top: 0; left: 0; margin-top: -220px; text-align: right;"   class="footer">
-                <h2  style="color: black;">Sobre Terra Dietetica</h2>
-                <br>
-                <p  style="color: black;" ><em>Preguntas Frecuentes</em></p>
-                <br>
-                <p  style="color: black;"><em>Cambios y Devoluciones</em></p>
-                <br>
-                <p style="color: black;"><em>Contacto</em></p>
-                <br>
-              </div>
-
+        <div class="footer">
             <div class="copyright">
                 <p>Copyright TeamFortran @ 2023</p>
             </div>
         </div>
-    </div>
-    
-
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
