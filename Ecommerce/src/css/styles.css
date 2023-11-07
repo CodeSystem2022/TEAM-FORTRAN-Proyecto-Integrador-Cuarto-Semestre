@@ -347,7 +347,11 @@ body {
 	color: #777;
 	margin-left: 0.5rem;
 }
-
+.btn-section:hover>.dropdown-menu{
+	display: block;
+	background-color: transparent;
+	border: none;
+}
 
 
 /* -------------- FOOTER ---------------- */
