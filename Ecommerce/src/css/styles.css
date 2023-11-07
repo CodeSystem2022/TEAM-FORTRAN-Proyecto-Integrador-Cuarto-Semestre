@@ -567,9 +567,7 @@ li:hover {
 
 .btn-section:hover>.dropdown-menu {
   display: block;
-  background-color: transparent;
-  border: none;
-}
+
 
 /*.escondido{
 	display: none;
@@ -1136,4 +1134,4 @@ li:hover {
 		padding: 0;
 		margin: 0;
 	}
-}
+	

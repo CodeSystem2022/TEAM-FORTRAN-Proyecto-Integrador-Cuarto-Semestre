@@ -55,4 +55,3 @@ btnCosmetica.addEventListener("click", (e) => {
     loadSection('cosmetica');
 })
 
-// createTarjetaProductoInicio(products);
