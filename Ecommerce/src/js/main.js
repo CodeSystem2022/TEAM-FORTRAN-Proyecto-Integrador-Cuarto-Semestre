@@ -1,8 +1,8 @@
 import { products } from "./products.js";
 
-console.log('hola');
-
 const contenedorTarjeta = document.querySelector(".fila-productos");
+const seccionProductos = document.querySelector(".fila-productos");
+
 
 function createTarjetaProductoInicio(products) {
     products.forEach(product => { 
@@ -31,11 +31,25 @@ const loadSection = (section) => {
     });
 }
 
+// Boton inicio
+const btnInicio = document.getElementById("btn-inicio");
+btnInicio.addEventListener("click", () => {
+  location.reload();
+});
+
+
+
 const btnTacc = document.querySelector(".btn-tacc");
 const btnVeggie = document.querySelector(".btn-veggie");
 const btnKeto = document.querySelector(".btn-keto");
 const btnNatural = document.querySelector(".btn-Natural");
 const btnCosmetica = document.querySelector(".btn-cosmetica");
+
+// Destacados
+const btnVeganoDestacado = document.querySelector(".btn-vegano-destacado");
+const btnKetoDestacado = document.querySelector(".btn-keto-destacado");
+const btnNaturalDestacado = document.querySelector(".btn-natural-destacado");
+
 
 btnTacc.addEventListener("click", (e) => {
     loadSection('tacc');
@@ -57,4 +71,17 @@ btnCosmetica.addEventListener("click", (e) => {
     loadSection('cosmetica');
 })
 
-createTarjetaProductoInicio(products);
+// Destacados
+
+btnVeganoDestacado.addEventListener("click", (e) => {
+    loadSection('VeganoDestacado'); // Cambia 'VeganoDestacado' por el nombre real de tu categoría destacada
+});
+
+btnKetoDestacado.addEventListener("click", (e) => {
+    loadSection('KetoDestacado'); // Cambia 'VeganoDestacado' por el nombre real de tu categoría destacada
+});
+
+btnNaturalDestacado.addEventListener("click", (e) => {
+    loadSection('NaturalDestacado'); // Cambia 'VeganoDestacado' por el nombre real de tu categoría destacada
+});
+

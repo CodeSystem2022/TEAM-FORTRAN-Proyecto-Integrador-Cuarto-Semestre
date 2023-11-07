@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/styles.css" />
+    <link rel="stylesheet" href="./css/cart.css" />
+    <script src="./src/js/main.js" defer></script>
+    <script src="./src/js/carrito.js" defer></script>
+    <script src="./src/js/cart.js" defer></script>
+    <title>Productos Naturales</title>
+  </head>
+  <body>
+    <head>
+      <nav>
+        <a href="./src/index.html"
+          ><img src="./assets/logo/logo.png" alt=""
+        /></a>
+        <div>
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="./cart.html" id="cart"><img src="" alt=""></a>
+        </div>
+      </nav>
+    </head>
+    <main>
+      <p id="carrito-vacio">
+        Ups! no hay productos en el carrito
+        <a href="./index.html">Agrega algunos</a>
+      </p>
+      <section id="productos-conteiner"></section>
+      <section id="totales">
+        <p>Total unidades: <span id="unidades">0</span></p>
+        <p>Total precio: $<span id="precio"></span></p>
+        <button disabled>Comprar</button>
+        <button id="reiniciar">Reiniciar carrito</button>
+      </section>
+    </main>
+  </body>
+</html>
