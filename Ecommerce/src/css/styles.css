@@ -22,6 +22,7 @@ body {
   font-family: "Open Sans", Arial, Sans-serif;
   font-size: 16px;
 }
+
 /* -------------- P Destacados ---------------- */
 /* ********************************** */
 /*             UTILIDADES             */
@@ -567,6 +568,7 @@ li:hover {
 
 .btn-section:hover>.dropdown-menu {
   display: block;
+}
 
 
 /*.escondido{
@@ -1134,4 +1136,4 @@ li:hover {
 		padding: 0;
 		margin: 0;
 	}
-	
+}
