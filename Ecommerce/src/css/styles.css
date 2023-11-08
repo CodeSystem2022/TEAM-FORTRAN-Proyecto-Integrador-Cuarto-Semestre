@@ -667,7 +667,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #8799f3;
+  background-color: #d17b4dc1;
   padding-left: 2vw;
 }
 
@@ -691,7 +691,7 @@ li>a {
 }
 
 li:hover {
-  background-color: #5973f1;
+  background-color:  #b46138;
 }
 
 .btn-section {
@@ -708,15 +708,15 @@ li:hover {
 .dropdown-menu>li {
   width: 100%;
   transform: translateX(-25px);
-  border-bottom: solid 1px #fff;
+  border-bottom: solid 1px rgb(227, 97, 16);
   display: flex;
   justify-content: center;
-  background-color: #8799f3;
+  background-color:  #b46138fe;
   height: 100%;
 }
 
 .dropdown-menu>li:hover {
-  background-color: #5973f1;
+  background-color:  #e45b17fe;
 }
 
 .btn-section:hover>.dropdown-menu {
