@@ -1,20 +1,20 @@
 
-.productos-conteiner{
+.fila-productos{
     width: 500px;
     margin: auto;
 }
 
-.tarjetaproducto{
+.tarjeta-producto{
     display: flex;
     gap: 20px;
     align-items: center;
 }
 
-.tarjetaproductoimg{
+.tarjeta-producto img{
     height: 100px;
     aspect-ratio: 1.5;
 }
-.tarjetaproducto h3{
+.tarjeta-producto h3{
     width: 130;
 }
 #totale , #carrito-vacio{
