@@ -483,21 +483,78 @@ body {
 
 
 /* -------------- FOOTER ---------------- */
-footer {
-  background-color: #000;
+
+footer{
+    width: 100%;
+    padding: 50px 0px;
+    background-image: url(../assets/logo/background-footer.svg);
+    background-size: cover;
+    
 }
 
-footer .copyright {
-  text-align: center;
-  padding: 15px 0;
-  color: #fff;
+.container__footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
 }
 
+.box__footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+.box__footer .logo img{
+    width: 180px;
+}
+
+.box__footer .terms{
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #000000;
+    font-size: 18px;
+}
+
+.box__footer h2{
+    margin-bottom: 30px;
+    color: #000000;
+    font-weight: 700;
+}
+
+.box__footer a{
+    margin-top: 10px;
+    color: #000000;
+    font-weight: 600;
+}
+
+.box__footer a:hover{
+    opacity: 0.8;
+}
+
+.box__footer a .fab{
+    font-size: 20px;
+}
+
+.box__copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box__copyright p{
+    margin-top: 20px;
+    color: #000000;
+}
+
+.box__copyright hr{
+    border: none;
+    height: 1px;
+    background-color: #000000;
 }
 
 /* Header */
@@ -556,8 +613,8 @@ margin: 20px 0;
 
 /* footer */
 footer {
-  background-color: #a7a8a7;
-  color: #fff;
+  background-color: rgb(238, 111, 111);
+  color: #000000;
   text-align: center;
   padding: 10px;
 }
