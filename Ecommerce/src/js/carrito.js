@@ -1,3 +1,5 @@
+const cuentaCarritoElement = document.getElementById("cuenta-carrito");
+
 function agregarAlCarrito(producto) {
   contenedorTarjeta.innerHTML = "";
   const memoria = JSON.parse(localStorage.getItem("dietetica"));
@@ -28,6 +30,7 @@ function agregarAlCarrito(producto) {
   actualizarNumeroCarrito();
   return cuenta;
 }
+
 //Funcion restar
 function restarAlCarrito(product) {
   const memoria = JSON.parse(localStorage.getItem("dietetica"));
@@ -42,7 +45,7 @@ function restarAlCarrito(product) {
     memoria[indiceProducto].cantidad--;
   }
   localStorage.setItem("dietetica", JSON.stringify(memoria));
-  actualizarNumeroCarrit();
+  actualizarNumeroCarrito();
 }
 
 /*Toma un producto, le agrega cantidad 1 y lo devuelve */
@@ -53,7 +56,7 @@ function getNuevoProductoParaMemoria(producto) {
 }
 
 /*Cuenta cuantos productos hay en el carrito*/
-const cuentaCarritoElement = document.getElementById("cuenta-carrito");
+
 function actualizarNumeroCarrito() {
   const memoria = JSON.parse(localStorage.getItem("dietetica"));
   if (memoria && memoria.length > 0) {
@@ -62,6 +65,7 @@ function actualizarNumeroCarrito() {
       0
     );
     cuentaCarritoElement.innerText = cuenta;
+    console.log(cuenta);
   } else {
     cuentaCarritoElement.innerText = 0;
   }

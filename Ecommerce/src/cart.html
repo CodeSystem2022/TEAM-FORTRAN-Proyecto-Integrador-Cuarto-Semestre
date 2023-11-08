@@ -3,11 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/css/styles.css" />
-    <link rel="stylesheet" href="./css/cart.css" />
-    <script src="./src/js/main.js" defer></script>
-    <script src="./src/js/carrito.js" defer></script>
-    <script src="./src/js/cart.js" defer></script>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/cart.css">
+    <script src="./js/carrito.js" defer></script>
+    <script src="./js/cart.js"></script>
     <title>Productos Naturales</title>
   </head>
   <body>
@@ -26,9 +25,11 @@
     <main>
       <p id="carrito-vacio">
         Ups! no hay productos en el carrito
-        <a href="./index.html">Agrega algunos</a>
+        <a href="index.html">Agrega algunos</a>
       </p>
-      <section id="productos-conteiner"></section>
+      <div class="fila-productos">
+
+      </div>
       <section id="totales">
         <p>Total unidades: <span id="unidades">0</span></p>
         <p>Total precio: $<span id="precio"></span></p>
