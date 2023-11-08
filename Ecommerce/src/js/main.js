@@ -75,3 +75,35 @@ btnNaturalDestacado.addEventListener("click", (e) => {
     loadSection('NaturalDestacado'); // Cambia 'VeganoDestacado' por el nombre real de tu categoría destacada
 });
 
+
+
+
+//loggin boton activar 
+
+document.querySelector("#show-login").addEventListener("click",function(){
+    document.querySelector(".popup").classList.add("active");
+});
+
+document.querySelector(".popup .close-btn").addEventListener("click",function(){
+    document.querySelector(".popup").classList.remove("active");
+});
+
+
+
+// Agregar event listener al botón "Sing up" en el formulario de registro
+document.querySelector("#show-register").addEventListener("click", function () {
+  openRegisterForm();
+});
+
+// Función para abrir el formulario de registro
+function openRegisterForm() {
+  var registerPopup = document.querySelector("#registerPopup");
+  registerPopup.classList.add("active");
+}
+
+// Agregar event listener al botón "Back to Login" en el formulario de registro
+document.querySelector("#showLoginFromRegister").addEventListener("click", function () {
+  var registerPopup = document.querySelector("#registerPopup");
+  registerPopup.classList.remove("active");
+  openLoginForm();
+});
