@@ -6,7 +6,7 @@ const totalesElement = document.getElementById("totales");
 const reiniciarCarritoElement = document.getElementById("reiniciar");
 function createTarjetaProductoInicio() {
   contenedorTarjeta.innerHTML = "";
-  const producto = JSON.parse(localStorage.getItem("productos"));
+  const producto = JSON.parse(localStorage.getItem("dietetica"));
   console.log(producto);
   if (producto && producto.length > 0) {
     producto.forEach((product) => {
@@ -24,7 +24,7 @@ function createTarjetaProductoInicio() {
               </div>
              
           `;
-      contenedorTarjeta.appendChild(nuevoProducto);
+          contenedorTarjeta.appendChild(nuevoProducto);
 
       nuevoProducto
         .getElementsByTagName("button")[1]
@@ -32,13 +32,13 @@ function createTarjetaProductoInicio() {
           agregarAlCarrito(product);
           const cuentaCarritoElement =
             e.target.parentElement.getElementsByTagName("span")[0];
-          cuentaCarritoElement.innerText = agregarAlCarrito(product);
+          cuentaCarritoElement.innerText = agregarAlCarrito(producto);
           actualizarTotalesctualizarTotales();
         });
       nuevoProducto
         .getElementsByTagName("button")[0]
         .addEventListener("click", (e) => {
-          restarAlCarrito(product);
+          restarAlCarrito(producto);
           createTarjetaProductoInicio();
           actualizarTotales();
         });
@@ -50,7 +50,7 @@ const loadSection = (section) => {
   contenedorTarjeta.innerHTML = "";
   products.forEach((product) => {
     if (product.category === section) {
-      createTarjetaProductoInicio([product]);
+      createTarjetaProductoInicio([producto]);
     }
   });
 };
