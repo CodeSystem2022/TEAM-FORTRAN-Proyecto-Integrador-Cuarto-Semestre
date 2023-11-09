@@ -6,7 +6,7 @@ const totalesElement = document.getElementById("totales");
 const reiniciarCarritoElement = document.getElementById("reiniciar");
 function createTarjetaProductoInicio() {
   contenedorTarjeta.innerHTML = "";
-  const producto = JSON.parse(localStorage.getItem("productos"));
+  const producto = JSON.parse(localStorage.getItem("dietetica"));
   console.log(producto);
   if (producto && producto.length > 0) {
     producto.forEach((product) => {
