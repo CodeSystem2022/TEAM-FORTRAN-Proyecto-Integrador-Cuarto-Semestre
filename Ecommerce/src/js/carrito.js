@@ -19,7 +19,7 @@ function agregarAlCarrito(producto) {
     const nuevaMemoria = memoria;
     //Si el producto no está en el carrito lo agrego
     if (indiceProducto === -1) {
-      const nuevaMemoria = [...memoria];
+      
       const nuevoProducto = getNuevoProductoParaMemoria(producto);
       nuevaMemoria.push(nuevoProducto);
        cantidadProductoFinal = 1;
