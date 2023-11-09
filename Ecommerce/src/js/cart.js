@@ -24,7 +24,7 @@ function createTarjetaProductoInicio() {
               </div>
              
           `;
-      contenedorTarjeta.appendChild(nuevoProducto);
+          contenedorTarjeta.appendChild(nuevoProducto);
 
       nuevoProducto
         .getElementsByTagName("button")[1]
