@@ -192,7 +192,7 @@ export const products = [
     },
     {
         id: 22,
-        name: "Almendras",
+        name: "Almendras x 250gr.",
         price: 4300,
         image:`${direccion}Almendras.jpg`,
         description: "Producto Natural",
@@ -201,7 +201,7 @@ export const products = [
     },
     {
         id: 23,
-        name: "Banana Deshidratada",
+        name: "Banana Deshidratada x 250gr.",
         price: 2750,
         image: `${direccion}BananaDeshidratada.jpg`,
         description: "Producto Natural",
@@ -210,7 +210,7 @@ export const products = [
     },
     {
         id: 24,
-        name: "Aanana en Rodajas",
+        name: "Aanana en Rodajas x 250gr.",
         price: 3280,
         image: `${direccion}AananaEnRodajas.jpg`,
         description: "Producto Natural",
@@ -219,7 +219,7 @@ export const products = [
     },
     {
         id: 25,
-        name: "Avellanas",
+        name: "Avellanas x 250gr.",
         price: 3700,
         image: `${direccion}Avellanas.jpg`,
         description: "Producto Natural",
@@ -228,7 +228,7 @@ export const products = [
     },
     {
         id: 26,
-        name: "Castañas de Caju",
+        name: "Castañas de Caju x 250gr.",
         price: 3750,
         image: `${direccion}CastañasDeCaju.jpg`,
         description: "Producto Natural",
@@ -237,7 +237,7 @@ export const products = [
     },
     {
         id: 27,
-        name: "Mix Frutos Secos",
+        name: "Mix Frutos Secos x 250gr.",
         price: 1450,
         image: `${direccion}MixFrutosSecos.jpg`,
         description: "Producto Natural",
@@ -246,7 +246,7 @@ export const products = [
     },
     {
         id: 28,
-        name: "Nuez Mariposa",
+        name: "Nuez Mariposa x 250gr.",
         price: 2880,
         image: `${direccion}NuezMariposa.jpg`,
         description: "Producto Natural",
@@ -255,7 +255,7 @@ export const products = [
     },
     {
         id: 29,
-        name: "Pasas de uva",
+        name: "Pasas de uva x 250gr.",
         price: 920,
         image: `${direccion}Pasas De Uva.jpg`,
         description: "Producto Natural",
@@ -264,7 +264,7 @@ export const products = [
     },
     {
         id: 30,
-        name: "Arandanos Deshidratados",
+        name: "Arandanos Deshidratados x 250gr.",
         price: 2250,
         image: `${direccion}ArandanosDeshidratados.jpg`,
         description: "Producto Natural",
@@ -273,7 +273,7 @@ export const products = [
     },
     {
         id: 31,
-        name: "Ciruelas Sin Carozo",
+        name: "Ciruelas Sin Carozo x 250gr.",
         price: 1350,
         image: `${direccion}CiruelasSinCarozo.jpg`,
         description: "Producto Natural",
@@ -282,7 +282,7 @@ export const products = [
     },
     {
         id: 32,
-        name: "Dátiles Mdejol",
+        name: "Dátiles Mdejol x 250gr.",
         price: 3000,
         image: `${direccion}DátilesMdejol.jpg`,
         description: "Producto Natural",
@@ -291,7 +291,7 @@ export const products = [
     },
     {
         id: 33,
-        name: "Durazno Deshidratados",
+        name: "Durazno Deshidratados x 250gr.",
         price: 1500,
         image: `${direccion}DuraznoDeshidratados.jpg`,
         description: "Producto Natural",
@@ -300,7 +300,7 @@ export const products = [
     },
     {
         id: 34,
-        name: "Higo Negro",
+        name: "Higo Negro x 250gr.",
         price: 1700,
         image: `${direccion}HigoNegro.jpg`,
         description: "Producto Natural",
@@ -309,7 +309,7 @@ export const products = [
     },
     {
         id: 35,
-        name: "Higo Turco",
+        name: "Higo Turco x 250gr.",
         price: 3875,
         image: `${direccion}HigoTurco.jpg`,
         description: "Producto Natural",
@@ -318,7 +318,7 @@ export const products = [
     },
     {
         id: 36,
-        name: "Kiwi Deshidratado",
+        name: "Kiwi Deshidratado x 250gr.",
         price: 2190,
         image: `${direccion}KiwiDeshidratado.jpg`,
         description: "Producto Natural",
@@ -327,7 +327,7 @@ export const products = [
     },
     {
         id: 37,
-        name: "Mango Deshidratado",
+        name: "Mango Deshidratado x 250gr.",
         price: 3525,
         image: `${direccion}MangoDeshidratado.jpg`,
         description: "Producto Natural",
@@ -336,7 +336,7 @@ export const products = [
     },
     {
         id: 38,
-        name: "Melon Deshidratado",
+        name: "Melon Deshidratado x 250gr.",
         price: 1985,
         image: `${direccion}MelonDeshidratado.jpg`,
         description: "Producto Natural",
@@ -345,7 +345,7 @@ export const products = [
     },
     {
         id: 39,
-        name: "Pera Deshidratada",
+        name: "Pera Deshidratada x 250gr.",
         price: 1463,
         image: `${direccion}PeraDeshidratada.jpg`,
         description: "Producto Natural",
@@ -354,7 +354,7 @@ export const products = [
     },
     {
         id: 40,
-        name: "Tiritas De Naranja",
+        name: "Tiritas De Naranja x 250gr.",
         price: 2100,
         image: `${direccion}TiritasDeNaranja.jpg`,
         description: "Producto Natural",
@@ -363,7 +363,7 @@ export const products = [
     },
     {
         id: 41,
-        name: "Tomates Secos",
+        name: "Tomates Secos x 250gr.",
         price: 1900,
         image: `${direccion}TomatesSecos.jpg`,
         description: "Producto Natural",
