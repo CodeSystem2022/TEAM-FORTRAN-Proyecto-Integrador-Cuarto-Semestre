@@ -522,7 +522,7 @@ footer{
 .box__footer h2{
     margin-bottom: 30px;
     color: #000000;
-    font-weight: 700;
+	 font-weight: 700;
 }
 
 .box__footer a{
@@ -554,7 +554,7 @@ footer{
 .box__copyright hr{
     border: none;
     height: 1px;
-    background-color: #000000;
+	background-color: #00000080;
 }
 
 /* Header */
@@ -613,8 +613,8 @@ margin: 20px 0;
 
 /* footer */
 footer {
-  background-color: rgb(238, 111, 111);
-  color: #000000;
+background-color: rgb(238, 111, 111);
+ color: #000000;
   text-align: center;
   padding: 10px;
 }
