@@ -30,7 +30,7 @@ function agregarAlCarrito(producto) {
 }
 
 //Funcion restar
-function restarAlCarrito(product) {
+function restarAlCarrito(producto) {
   const memoria = JSON.parse(localStorage.getItem("dietetica"));
   const indiceProducto = memoria.findIndex(
     (product) => product.id === producto.id
@@ -38,7 +38,6 @@ function restarAlCarrito(product) {
   localStorage.setItem("dietetica", JSON.stringify(memoria));
   if (memoria[indiceProducto].cantidad === 1) {
     memoria.splice(indiceProducto, 1);
-    localStorage.setItem("dietetica", JSON.stringify(memoria));
   } else {
     memoria[indiceProducto].cantidad--;
   }

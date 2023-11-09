@@ -32,13 +32,13 @@ function createTarjetaProductoInicio() {
           agregarAlCarrito(product);
           const cuentaCarritoElement =
             e.target.parentElement.getElementsByTagName("span")[0];
-          cuentaCarritoElement.innerText = agregarAlCarrito(product);
+          cuentaCarritoElement.innerText = agregarAlCarrito(producto);
           actualizarTotalesctualizarTotales();
         });
       nuevoProducto
         .getElementsByTagName("button")[0]
         .addEventListener("click", (e) => {
-          restarAlCarrito(product);
+          restarAlCarrito(producto);
           createTarjetaProductoInicio();
           actualizarTotales();
         });
@@ -50,7 +50,7 @@ const loadSection = (section) => {
   contenedorTarjeta.innerHTML = "";
   products.forEach((product) => {
     if (product.category === section) {
-      createTarjetaProductoInicio([product]);
+      createTarjetaProductoInicio([producto]);
     }
   });
 };
