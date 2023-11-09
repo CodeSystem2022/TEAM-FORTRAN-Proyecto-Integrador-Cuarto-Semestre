@@ -1,71 +1,84 @@
+const cuentaCarritoElement = document.getElementById("cuenta-carrito");
+
+/** Toma un objeto producto o un objeto con al menos un ID y lo agrega al carrito */
 function agregarAlCarrito(producto) {
-  contenedorTarjeta.innerHTML = "";
-  const memoria = JSON.parse(localStorage.getItem("dietetica"));
-  let cuenta = 0;
-  console.log(memoria);
-  if (!memoria) {
+  //Reviso si el producto está en el carrito.
+  let memoria = JSON.parse(localStorage.getItem("dietetica"));
+  let cantidadProductoFinal;
+  
+  //Si no hay localstorage lo creo
+  if (!memoria || memoria.length === 0) {
     const nuevoProducto = getNuevoProductoParaMemoria(producto);
     localStorage.setItem("dietetica", JSON.stringify([nuevoProducto]));
-    cuenta = 1;
+    cantidadProductoFinal = 1;
   } else {
+    //Si hay localstorage me fijo si el artículo ya está ahí
     const indiceProducto = memoria.findIndex(
-      (product) => product.id === producto.id
+      products => products.id === producto.id
     );
-    console.log(indiceProducto);
+    const nuevaMemoria = memoria;
+    //Si el producto no está en el carrito lo agrego
     if (indiceProducto === -1) {
-      const nuevaMemoria = [...memoria]; // Hacer una copia del arreglo existente
-      nuevaMemoria.push(getNuevoProductoParaMemoria(producto));
-      localStorage.setItem("dietetica", JSON.stringify(nuevaMemoria));
-      cuenta = 1;
+      const nuevaMemoria = [...memoria];
+      const nuevoProducto = getNuevoProductoParaMemoria(producto);
+      nuevaMemoria.push(nuevoProducto);
+       cantidadProductoFinal = 1;
     } else {
-      nuevaMemoria[indiceProducto].cantidad++;
-
-      cuenta = nuevaMemoria[indiceProducto].cantidad;
+      //Si el producto está en el carrito le agrego 1 a la cantidad.
+      nuevaMemoria[indiceProducto].cantidad ++;
+      cantidadProductoFinal = nuevaMemoria[indiceProducto].cantidad;
     }
-    localStorage.setItem("dietetica", JSON.stringify(memoria));
-    return cuenta;
+    localStorage.setItem("dietetica", JSON.stringify(nuevaMemoria));
+    actualizarNumeroCarrito();
+    return cantidadProductoFinal;
   }
-  actualizarNumeroCarrito();
-  return cuenta;
 }
 
-//Funcion restar
+/** Resta una unidad de un producto del carrito */
 function restarAlCarrito(producto) {
-  const memoria = JSON.parse(localStorage.getItem("dietetica"));
-  const indiceProducto = memoria.findIndex(
-    (product) => product.id === producto.id
-  );
-  localStorage.setItem("dietetica", JSON.stringify(memoria));
-  if (memoria[indiceProducto].cantidad === 1) {
-    memoria.splice(indiceProducto, 1);
-  } else {
-    memoria[indiceProducto].cantidad--;
-  }
-  localStorage.setItem("dietetica", JSON.stringify(memoria));
-  actualizarNumeroCarrito();
+    let memoria = JSON.parse(localStorage.getItem("dietetica"));
+    let cantidadProductoFinal = 0;
+    const indiceProducto = memoria.findIndex(
+        products => products.id === producto.id
+      );
+    let nuevaMemoria = memoria;
+    nuevaMemoria[indiceProducto].cantidad--;
+    cantidadProductoFinal = nuevaMemoria[indiceProducto].cantidad;
+    if(cantidadProductoFinal === 0){
+    nuevaMemoria.splice(indiceProducto,1)
+    };
+    localStorage.setItem("dietetica", JSON.stringify(nuevaMemoria));
+    actualizarNumeroCarrito();
+    return cantidadProductoFinal;
 }
 
-/*Toma un producto, le agrega cantidad 1 y lo devuelve */
+/** Agrega cantidad a un objeto producto */
 function getNuevoProductoParaMemoria(producto) {
   const nuevoProducto = producto;
   nuevoProducto.cantidad = 1;
   return nuevoProducto;
 }
 
-/*Cuenta cuantos productos hay en el carrito*/
-const cuentaCarritoElement = document.getElementById("cuenta-carrito");
+/** Actualiza el número del carrito del header */
 function actualizarNumeroCarrito() {
+  let cuenta = 0;
   const memoria = JSON.parse(localStorage.getItem("dietetica"));
   if (memoria && memoria.length > 0) {
-    const cuenta = memoria.reduce(
+    cuenta = memoria.reduce(
       (acum, current) => acum + current.cantidad,
       0
     );
-    cuentaCarritoElement.innerText = cuenta;
-    console.log(cuenta);
+    return cuentaCarritoElement.innerText = cuenta;
   } else {
     cuentaCarritoElement.innerText = 0;
   }
 }
 
+/** Reinicia el carrito */
+function reiniciarCarrito(){
+  localStorage.removeItem("dietetica");
+  actualizarNumeroCarrito();
+}
+
 actualizarNumeroCarrito();
+
