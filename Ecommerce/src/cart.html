@@ -5,34 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/cart.css">
+    <script src="./js/products.js"></script>
     <script src="./js/carrito.js" defer></script>
-    <script src="./js/cart.js"></script>
-    <title></title>
+    <script src="./js/cart.js" defer></script>
+    <title>Dietetica Carrito</title>
   </head>
   <body>
-    <head>
-      <nav>
-        <a href="./src/index.html"
-          ><img src="./assets/logo/logo.png" alt=""
-        /></a>
-        <div>
-          <a href="#"></a>
-          <a href="#"></a>
-          <a href="./cart.html" id="cart"><img src="" alt=""></a>
+    <header class="header" id="inicio">
+        <div class="contenedor">
+            <div class="logo">
+                <img width="300" height="300" src="./assets/logo/logo-wo-bg.png" alt="Tienda Saludable">
+            </div>
         </div>
-      </nav>
-    </head>
+        <nav>
+            <ul class="cont-ul">
+                <li><a href="#" id="btn-inicio">Inicio</a></li>
+                <li><a href="##">Contacto</a></li>
+                <li><a href="cart.html"><img src="./assets/img/carrito.png" alt="Carrito de compras"><span id="cuenta-carrito">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
-      <p id="carrito-vacio">
-        Ups! no hay productos en el carrito
-        <a href="index.html">Agrega algunos</a>
-      </p>
-      <div class="fila-productos">
-
-      </div>
+      <p id="carrito-vacio">Ups! El carrito está vacío, <a href="index.html">elige algunos productos</a></p>
+		<section id="cart-container">
+		</section>
       <section id="totales">
         <p>Total unidades: <span id="unidades">0</span></p>
-        <p>Total precio: $<span id="precio"></span></p>
+        <p>Total precio: $<span id="precio">0</span></p>
         <button disabled>Comprar</button>
         <button id="reiniciar">Reiniciar carrito</button>
       </section>

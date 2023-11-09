@@ -1,5 +1,5 @@
 
-.fila-productos{
+#cart-container{
     width: 500px;
     margin: auto;
 }
@@ -17,6 +17,6 @@
 .tarjeta-producto h3{
     width: 130;
 }
-#totale , #carrito-vacio{
+#totales , #carrito-vacio{
  text-align: center;
 }

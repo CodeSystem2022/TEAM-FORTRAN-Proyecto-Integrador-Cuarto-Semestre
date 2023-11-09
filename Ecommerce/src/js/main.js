@@ -1,7 +1,7 @@
 import { products } from "./products.js";
 
 const contenedorTarjeta = document.querySelector(".fila-productos");
-const seccionProductos = document.querySelector(".fila-productos");
+//const seccionProductos = document.querySelector(".fila-productos");
 
 
 function createTarjetaProductoInicio(products) {
