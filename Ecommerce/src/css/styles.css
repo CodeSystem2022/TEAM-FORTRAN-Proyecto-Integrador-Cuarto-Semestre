@@ -46,7 +46,7 @@ body {
 }
 
 /* ********************************** */
-/*             CATEGORIES             */
+/*             CATEGORIAS             */
 /* ********************************** */
 
 .top-categories {
@@ -98,23 +98,6 @@ body {
 	background-repeat: no-repeat;
 }
 
-.category-tacc {
-	background-image: linear-gradient(rgba(12, 62, 11, 0.718), #00000080),
-		url('../assets/img/tacc.jpeg');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	display: none;
-}
-
-.category-cosmetica {
-	background-image: linear-gradient(#5a513eb7, #00000080),
-		url('../assets/img/cosmetica.jpeg');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	display: none;
-}
 
 
 .btn-vegano-destacado,
@@ -235,47 +218,6 @@ body {
 	background-color: #000;
 }
 
-.button-group {
-	display: flex;
-	flex-direction: column;
-	gap: 1rem;
-
-	position: absolute;
-	top: 0;
-	right: -3rem;
-	z-index: -1;
-	transition: all 0.4s ease;
-}
-
-.button-group span {
-	border: 1px solid var(--primary-color);
-	padding: 0.8rem;
-
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-radius: 50%;
-	cursor: pointer;
-	transition: all 0.4s ease;
-}
-
-.button-group span:hover {
-	background-color: var(--primary-color);
-}
-
-.button-group span i {
-	font-size: 1.5rem;
-	color: var(--primary-color);
-}
-
-.button-group span:hover i {
-	color: #fff;
-}
-
-.card-product:hover .button-group {
-	z-index: 0;
-	right: -1rem;
-}
 
 .content-card-product {
 	display: grid;
@@ -307,32 +249,6 @@ body {
 
 .content-card-product h3:hover {
 	color: var(--primary-color);
-}
-
-.add-cart {
-	justify-self: start;
-	border: 2px solid var(--primary-color);
-	padding: 1rem;
-	border-radius: 50%;
-	cursor: pointer;
-	transition: all 0.4s ease;
-
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.add-cart:hover {
-	background-color: var(--primary-color);
-}
-
-.add-cart i {
-	font-size: 1.5rem;
-	color: var(--primary-color);
-}
-
-.add-cart:hover i {
-	color: #fff;
 }
 
 .content-card-product .price {
