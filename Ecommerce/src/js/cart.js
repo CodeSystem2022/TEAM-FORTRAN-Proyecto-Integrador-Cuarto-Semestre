@@ -3,7 +3,8 @@ const unidadesElement = document.getElementById("unidades");
 const precioElement = document.getElementById("precio");
 const carritoVacioElement = document.getElementById("carrito-vacio");
 const totalesElement = document.getElementById("totales");
-
+var comprarBtn = document.getElementById('comprar');
+var siguienteBtn = document.getElementById('siguiente');
 
 /** Crea las tarjetas de productos teniendo en cuenta lo guardado en localstorage */
 function createTarjetaProductoCarrito() {
@@ -79,7 +80,6 @@ function createTarjetaProductoCarrito() {
 createTarjetaProductoCarrito();
 
 /** Actualiza el total de precio y unidades de la página del carrito */
-
 function actualizarTotales() {
     const product = JSON.parse(localStorage.getItem("dietetica"));
     let unidades = 0;
@@ -101,34 +101,20 @@ function actualizarTotales() {
     }
 }
 
-/** 
-function actualizarTotales() {
-  const product = JSON.parse(localStorage.getItem("dietetica"));
-  let unidades = 0;
-  let precio = 0;
-
-  if (product && product.length > 0) {
-    product.forEach((product) => {
-      unidades += product.cantidad;
-      precio = product.precio * product.cantidad;
-    });
-  }
-
-  unidadesElement.innerText = unidades;
-  precioElement.innerText = precio;
-
-  if(precio === 0) {
-    reiniciarCarrito();
-    revisarMensajeCarrito();
-  }
-}
-*/
-
 /** Muestra o esconde el mensaje de que no hay nada en el carrito */
 function revisarMensajeCarrito() {
-  const productos = JSON.parse(localStorage.getItem("dietetica"));
-  carritoVacioElement.classList.toggle("escondido", productos);
-  totalesElement.classList.toggle("escondido", !productos);
+    const productos = JSON.parse(localStorage.getItem("dietetica"));
+    comprarBtn = document.querySelector('#totales button');
+
+    if (!productos || productos.length === 0) {
+        // No hay productos, muestra el mensaje
+        document.getElementById("carrito-vacio").style.display = "block";
+        comprarBtn.setAttribute('disabled', 'true');
+    } else {
+        // Hay productos, oculta el mensaje
+        document.getElementById("carrito-vacio").style.display = "none";
+        comprarBtn.removeAttribute('disabled');
+    }
 }
 
 document.getElementById("reiniciar").addEventListener("click", () => {
@@ -136,3 +122,22 @@ document.getElementById("reiniciar").addEventListener("click", () => {
   reiniciarCarrito();
   revisarMensajeCarrito();
 });
+
+// Agrega un evento de clic al botón "Comprar" para mostrar el modal
+comprarBtn.addEventListener('click', function() {
+    var modal = document.getElementById('modal');
+    modal.style.display = 'flex';
+});
+
+// Agrega un evento de clic al botón "Siguiente" para redirigir a index.html
+siguienteBtn.addEventListener('click', function () {
+    // Reinicia la memoria (LocalStorage)
+    localStorage.removeItem("dietetica");
+    window.location.href = 'index.html';
+});
+
+// Llama a revisarMensajeCarrito() al cargar la página
+window.addEventListener('load', () => {
+    revisarMensajeCarrito();
+});
+
