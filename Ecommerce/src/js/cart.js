@@ -120,7 +120,8 @@ function revisarMensajeCarrito() {
 document.getElementById("reiniciar").addEventListener("click", () => {
   contenedorTarjetas.innerHTML = "";
   reiniciarCarrito();
-  revisarMensajeCarrito();
+    revisarMensajeCarrito();
+    actualizarTotales();
 });
 
 // Agrega un evento de clic al botón "Comprar" para mostrar el modal
