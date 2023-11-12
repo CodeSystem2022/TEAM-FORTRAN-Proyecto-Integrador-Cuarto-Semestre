@@ -37,19 +37,32 @@ function agregarAlCarrito(producto) {
 /** Resta una unidad de un producto del carrito */
 function restarAlCarrito(producto) {
     let memoria = JSON.parse(localStorage.getItem("dietetica"));
-    let cantidadProductoFinal = 0;
-    const indiceProducto = memoria.findIndex(
-        products => products.id === producto.id
-      );
-    let nuevaMemoria = memoria;
-    nuevaMemoria[indiceProducto].cantidad--;
-    cantidadProductoFinal = nuevaMemoria[indiceProducto].cantidad;
-    if(cantidadProductoFinal === 0){
-    nuevaMemoria.splice(indiceProducto,1)
-    };
-    localStorage.setItem("dietetica", JSON.stringify(nuevaMemoria));
-    actualizarNumeroCarrito();
-    return cantidadProductoFinal;
+
+    // Encuentra el índice del producto en el carrito
+    const indiceProducto = memoria.findIndex(products => products.id === producto.id);
+
+    if (indiceProducto !== -1) {
+        // Resta una unidad al producto
+        memoria[indiceProducto].cantidad--;
+
+        // Verifica si la cantidad es menor o igual a cero y elimina el producto si es necesario
+        if (memoria[indiceProducto].cantidad <= 0) {
+            memoria.splice(indiceProducto, 1);
+        }
+
+        // Actualiza el carrito en el localStorage
+        localStorage.setItem("dietetica", JSON.stringify(memoria));
+
+        // Actualiza la interfaz y el número del carrito
+        createTarjetaProductoCarrito();
+        actualizarTotales();
+
+        // Devuelve la nueva cantidad del producto
+        return Math.max(0, memoria[indiceProducto]?.cantidad || 0);
+    }
+
+    // Si el producto no está en el carrito, devuelve 0
+    return 0;
 }
 
 /** Agrega cantidad a un objeto producto */
