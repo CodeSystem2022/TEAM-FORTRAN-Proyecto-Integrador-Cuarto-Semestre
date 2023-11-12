@@ -111,9 +111,33 @@ function openRegisterForm() {
   registerPopup.classList.add("active");
 }
 
+
+document.querySelector("#registerPopup .close-btn").addEventListener("click", function () {
+    document.querySelector("#registerPopup").classList.remove("active");
+});
+
 // Agregar event listener al botón "Back to Login" en el formulario de registro
 document.querySelector("#showLoginFromRegister").addEventListener("click", function () {
   var registerPopup = document.querySelector("#registerPopup");
   registerPopup.classList.remove("active");
   openLoginForm();
+});
+
+fetch('/api/user/register', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(formData),
+})
+.then(response => response.json())
+.then(data => {
+    if (data.redirect) {
+        window.location.href = data.redirect;
+    } else {
+        // Maneja otras respuestas o realiza otras acciones
+    }
+})
+.catch(error => {
+    console.error('Error:', error);
 });
