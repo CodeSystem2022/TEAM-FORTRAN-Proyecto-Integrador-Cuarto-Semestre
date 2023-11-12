@@ -12,29 +12,93 @@
   </head>
   <body>
     <header class="header" id="inicio">
-        <div class="contenedor">
-            <div class="logo">
-                <img width="300" height="300" src="./assets/logo/logo-wo-bg.png" alt="Tienda Saludable">
-            </div>
+      <div class="contenedor">
+        <div class="logo">
+          <img width="300" height="300" src="./assets/logo/logo-wo-bg.png" alt="Tienda Saludable">
         </div>
-        <nav>
-            <ul class="cont-ul">
-                <li><a href="#" id="btn-inicio">Inicio</a></li>
-                <li><a href="##">Contacto</a></li>
-                <li><a href="cart.html"><img src="./assets/img/carrito.png" alt="Carrito de compras"><span id="cuenta-carrito">0</span></a></li>
-            </ul>
-        </nav>
+      </div>
+      <nav>
+        <ul class="cont-ul">
+            <li><a href="index.html" id="btn-inicio">Inicio</a></li>
+            <li><a href="cart.html"><img src="./assets/img/carrito.png" alt="Carrito de compras"><span id="cuenta-carrito">0</span></a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-      <p id="carrito-vacio">Ups! El carrito está vacío, <a href="index.html">elige algunos productos</a></p>
-		<section id="cart-container">
-		</section>
-      <section id="totales">
-        <p>Total unidades: <span id="unidades">0</span></p>
-        <p>Total precio: $<span id="precio">0</span></p>
-        <button disabled>Comprar</button>
-        <button id="reiniciar">Reiniciar carrito</button>
+        <p id="carrito-vacio">Ups! El carrito está vacío, <a href="index.html">elige algunos productos</a></p>
+      <section id="cart-container">
       </section>
+      <section id="totales">
+          <p>Total unidades: <span id="unidades">0</span></p>
+          <p>Total precio: $ <span id="precio">0</span></p>
+          <button id="comprar" disabled>Comprar</button>
+          <button id="reiniciar">Reiniciar carrito</button>
+      </section>
+      <div id="modal" class="modal">
+          <div class="modal-content">
+            <p>Compra realizada correctamente.</p>
+            <button id="siguiente">Siguiente</button>
+          </div>
+      </div>
     </main>
+    <footer>
+      <div class="container__footer">
+                <div class="box__footer">
+                    <div class="logo">
+                        <img src="assets/logo/Captura-PhotoRoom.png-PhotoRoom.png" alt="">
+                    </div>
+                    <div class="terms">
+                        <p>Somos una tienda comprometida en proporcionar productos de alta calidad para mejorar tu estilo de vida y promover la salud y el bienesta.</p>
+                    </div>
+                </div>
+                <div class="box__footer">
+                    <h2>Ubicacion</h2>
+                    <div class="direccion-ubicacion">
+                        <p class="calle"> San Martin 150 Argentina</p>
+                        <p class="telefono">(54) 2614365206</p>
+                        <p class="correo">teamFortran@gmail.com</p>
+                    </div>
+    
+                    <div class="horarios">
+                        <h3>Horarios</h3> 
+                        <p class="entre-semana">Lunes a Viernes <br> 8:00 am - 8:00pm</p>
+                        
+                       
+                        </div>
+            
+                </div>
+    
+                <div class="box__footer">
+                    <h2>Compañia</h2>
+                    <a href="preguntas-frecuentes-/preguntas frecuentes.html">Preguntas frecuentes</a>
+                    <a href="#">Cambios y devoluciones</a>
+                    <div class="medio de pago">
+                        <br>
+                        <h3>Medios de pago</h3>
+                        <a href="#"> <i class="fa-brands fa-cc-visa"></i> Visa</a>
+                        <a href="#"> <i class="fa-brands fa-cc-mastercard"></i>  Mastercard</a>
+                    </div>   
+                    <div class="envio">
+                        <br>
+                        <h3>Medios de envio</h3>
+                        <a href="#"> <i class="fa-solid fa-truck-fast"></i> </a>
+                        <a href="#"> <i class="fa-solid fa-shop"></i></a>
+                    </div>            
+                </div>
+    
+                <div class="box__footer">
+                    <h2>Redes Sociales</h2>
+                    <a href="https://www.facebook.com"> <i class="fab fa-facebook-square"></i> Facebook</a>
+                    <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i> Twitter</a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i> Instagram</a>
+                </div>
+    
+            </div>
+    
+            <div class="box__copyright">
+                <hr>
+                <p>Todos los derechos reservados © 2023 <b> TeamFortran </b></p>
+            </div>
+    </footer>
   </body>
 </html>
