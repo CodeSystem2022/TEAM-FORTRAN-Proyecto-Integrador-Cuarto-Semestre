@@ -827,7 +827,7 @@ export const products = [
         id: 92,
         name:"Chocolatada en polvo con leche de coco",
         price: 2420,
-        image: `${direccion}Chocolatada.jpg`,
+        image: `${direccion}chocolatadapolvo.jpg`,
         description: "x 150 grs",
         category: 'vegano',
         stock: 25
@@ -845,7 +845,7 @@ export const products = [
         id: 94,
         name:"Hummus de Palta",
         price: 1290,
-        image: `${direccion}Palta.jpg`,
+        image: `${direccion}palta.jpg`,
         description: "x 220 grs",
         category: 'vegano',
         stock: 10
