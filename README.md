@@ -58,8 +58,20 @@ Se podra realizar la descarga de este repositorio de la siguiente manera:
 </div>
 
 2. Luego ingresaremos a la carpeta "TEAM-FORTRAN-Proyecto-Integrador-Cuarto-Semestre/Ecommerce/src" .
+3. 
+*Abrir una terminal en esta dirección mencionada en el punto 2.
+*Crear archivo .env con los datos
 
-3. Como siguiente debemos ejecutar el archivo "index.html" .
+PORT = 5000
+MONGODB = mongodb+srv://lucashotmail4:teamfortran@cluster0.srnscsd.mongodb.net/?retryWrites=true&w=majority
+JWT_SECRET = mysecret
+
+*Ejecutar en cualquier terminal npm install
+*Ejecutar en cualquier terminal npm run dev
+
+*Abrir cualquier navegador e ir a la dirección 'localhost:5500' (o el puerto que esté disponible)
+
+4. Como siguiente debemos ejecutar el archivo "index.html" .
 <div align="center">
 <img src="Ecommerce/src/readme-img/index.png" alt="Ejecucion index.html para abrir tienda">
 </div>
