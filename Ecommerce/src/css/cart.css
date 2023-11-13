@@ -1,22 +1,138 @@
-
-#cart-container{
-    width: 500px;
-    margin: auto;
+main p {
+  margin: 0;
+  font-size: 20px;
 }
 
-.tarjeta-producto{
-    display: flex;
-    gap: 20px;
-    align-items: center;
+footer {
+    margin-top: 50px;
 }
 
-.tarjeta-producto img{
-    height: 100px;
-    aspect-ratio: 1.5;
+#cart-container {
+  width: 1500px;
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+  margin-top: 80px;
 }
-.tarjeta-producto h3{
-    width: 130;
+
+.tarjeta-producto {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
 }
-#totales , #carrito-vacio{
- text-align: center;
+
+.tarjeta-producto img {
+  height: 150px;
+  aspect-ratio: 1.5;
 }
+
+.tarjeta-producto h3 {
+  width: 230px;
+}
+
+#totales {
+  text-align: center;
+  margin-top: 20px;
+  
+}
+
+#totales p {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+#totales span {
+  font-weight: bold;
+  color: #ee6130;
+}
+
+#totales button {
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s;
+}
+
+#totales button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+#totales button#reiniciar {
+  background-color: #dc3545;
+}
+
+#totales button:hover {
+  background-color: #218838;
+}
+
+#totales button#reiniciar:hover {
+  background-color: #c82333;
+}
+
+#carrito-vacio {
+  text-align: center;
+  width: 800px;
+  height: 150px;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#carrito-vacio a {
+  text-decoration: none;
+}
+
+/* Agregados para el modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.modal-content p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.modal-content button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background-color: #0056b3;
+}
+
