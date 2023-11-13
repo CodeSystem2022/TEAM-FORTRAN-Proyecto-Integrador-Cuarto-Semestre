@@ -81,4 +81,9 @@ JWT_SECRET = mysecret
 <img src="Ecommerce/src/readme-img/Pagina principal.png" alt="Nuestra tienda con su saludable atencion">
 </div>
 
+# ¡Gracias por visitar nuestro proyecto!
+
+<div align="center">
+<img src="Ecommerce/src/readme-img/FRSR.jpg" alt="UTN FRSR">
+</div>
 
